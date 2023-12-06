@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <title>Search webpage</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    
+    <!-- #Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- #Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- CSS Styling & scripts -->
+    <link rel="stylesheet" href="styles2.css">
+    <script src="scripts2.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <header class="Section container-fluid p-4">
+          <nav class="container d-flex justify-content-between flex-sm-row flex-column position-relative align-items-sm-center p-3">
+              <input type="checkbox" name="nav-toggle" id="nav-toggle" class="d-none">
+              <label for="nav-toggle" class="d-block d-sm-none" id="nav-menu-btn"></label>
+              <div class="d-flex flex-sm-row flex-column align-items-center">
+                      <img src="./images/someimage.png" alt="MUSEUM_LOGO" class="logo mb-3"/>
+              </div>
+              <ul class="nav hamburger font-weight-bold mx-auto mx-md-0 flex-column flex-sm-row text-center mt-3 mt-sm-0">
+                <li class="nav-item mx-3"> <a href="#" class="nav-link text-light">TICKETS</a></li>
+                <li class="nav-item mx-3"> <a href="#" class="nav-link text-light">SUPPORT</a></li>
+                <li class="nav-item mx-3"> <a href="#" class="nav-link text-light">SEARCH</a></li>
+              </ul>
+          </nav>
+          <!-- Heroo Section -->
+          <section class="container-fluid justify-content-center pt-5">
+            <div class="d-flex flex-column justify-content-center text-center text-light m-5">
+              <div class="courseFontHero ">&lsaquo;&lsaquo;A  Surreal Cityscape</div>
+              <div class="courseFontHero ">Where Buildings Defy Gravity. &rsaquo;&rsaquo;</div>
+              </div>
+          </section>
+       
+        </header>
+      </div>
+
+    <main>
+        <!-- SEARCH SECTION START -->
+        <section class="container-fluid bg-violet pt-5 px-5 pb-3" id="search-section">
+            <div class="search-filters pt-0 pb-4">
+                <div class="container-md row mx-auto">
+                    <div class="col-12 col-md mt-1">
+                        <label for="user_search" class="courseFont mb-2">What are you looking for?</label>
+                        <input type="text" class="form-control 
+                         search-element" id="user_search" placeholder="user_search" aria-label="user_search" aria-describedby="basic-addon1">
+                        </button>
+                    </div>                   
+                </div>
+            </div>
+        </section>
+
+        <!-- SEARCH SECTION END-->
+
+                 
+        <!-- EXHIBITION SECTION START -->
+
+        <section class="container m-6">
+                <div class="d-flex flex-column justify-content-start m-5">
+                    <div class="courseFont d-md-block">Exhibitions</div>
+                </div>
+                
+                <!-- Exhibitions Cards -->
+                <div class="card-list mb-5">
+                    <a href="#" class="card-item data-date="December 2023">
+                        <img src="./images/image1.jpg" alt="Card Image">
+                        <span class="card-title exhibition_No1">Floating Cities</span>
+                        <h3>Imagine cities suspended in the air, detached from the ground, 
+                            with buildings and structures seemingly defying gravity. </h3>
+                        <div class="date text-dark my-4">Date: December 2023</div>
+                        <div class="arrow">
+                            <i class="fas fa-arrow-right card-icon"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item data-date="January 2024">
+                        <img src="./images/image2.jpg" alt="Card Image">
+                        <span class="card-title exhibition_No2">Inverted Architecture</span>
+                        <h3>Explore the surreal concept of inverted architecture where skyscrapers 
+                            and structures extend both above and below ground. Streets, parks, and 
+                            buildings might exist in a mirrored or upside-down world, 
+                            challenging the conventional perspective of a city.</h3>
+                        <div class="date text-dark my-4">Date: January 2024</div>
+                        <div class="arrow">
+                            <i class="fas fa-arrow-right card-icon"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="card-item data-date="February 2024">
+                        <img src="./images/image3.jpg" alt="Card Image">
+                        <span class="card-title exhibition_No1">City of Mirrors</span>
+                        <h3>Envision a city entirely made of mirrors, where every surface reflects 
+                            and distorts the surroundings. The skyline, streets, and 
+                            structures would create a mesmerizing and disorienting visual experience, 
+                            playing with light, reflections, and illusions.</h3>
+                        <div class="date text-dark my-4">Date: February 2024</div>
+                        <div class="arrow">
+                            <i class="fas fa-arrow-right card-icon"></i>
+                        </div>
+                    </a>
+                </div>
+        </section>
+        <!-- EXHIBITION SECTION END -->
+    </main>
+
+    <!-- FOOTER -->
+    <section>
+    <footer class="bg-sectionfree footer p-4">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Mission and History</a></li>
+              <li><a href="#">Collection Areas</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Free Tours</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">Art Skills</a></li>
+              <li><a href="#">New Uploads</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Career Opportunities</h4>
+            <ul class="links">
+              <li><a href="#">Volunteers</a></li>
+              <li><a href="#">Fellowships</a></li>
+              <li><a href="#">Interships</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Join Our Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-x"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+</body>
+</html>
