@@ -254,6 +254,7 @@ color: #6666d0;
   margin: 20px 0;
   color: #bfbfbf;
   max-width: 300px;
+  text-align: justify;
 }
 .footer-col form {
   display: flex;
