@@ -1,0 +1,119 @@
+/* Global styles */
+body, html {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 105vh; /* Using viewport height for full height */
+    overflow: hidden;
+    background-color: #f8f8f8;
+  }
+
+  /* Navigation bar styles */
+  .navbar {
+    position: fixed;
+    top: 5%; 
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+  }
+
+  .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  /* Adjusts the last nav item to remove extra margin */
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+
+  /* Navigation bar dynamic hide/show */
+  .navbar.collapsed {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .navbar.collapsed ul {
+    display: none; /* Hide the menu items when collapsed */
+  }
+  .navbar.collapsed::after {
+    content: attr(data-current-section);
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+  }
+
+  /* You may also want to add styles for hover effects and other interactions */
+  .navbar.collapsed:hover::after {
+    color: #363636; /* Darker color on hover, adjust as needed */
+  }
+
+  /* Link styles */
+  .navbar li a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Hover effect for links */
+  .navbar li a:hover {
+    color: #363636;
+  }
+
+  /* Responsive design adjustments for smaller screens */
+  @media screen and (max-width: 800px) {
+    .navbar {
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+
+  /* Styles for the side-scrolling sections */
+  .side-scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: calc(100% - 50px);
+  }
+
+  /* Section styles */
+  .section {
+    display: inline-block;
+    width: 3000px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  /* Section Art and Images */
+  #City {
+    background: url('images/header_img\ 1.png') no-repeat center center fixed;
+    background-size: contain;
+  }
+
+  #Exhibit-A {
+    background: url('images/') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #Exhibit-B {
+    background: url('images/') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #Exhibit-C {
+    background: url('images/') no-repeat center center fixed;
+    background-size: cover;
+  }
