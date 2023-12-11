@@ -111,8 +111,14 @@ body, html {
 
   /* Section Art and Images */
   #City {
-    background: url('images/header_img\ 1.png') no-repeat center center fixed;
+    background-image: url('images/header_img 1.png');
+    background-color: var(--background-color);
+    max-width: 100%;
+    height: auto;
+    background-position-x: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
   }
 
   #Exhibit-A {
