@@ -21,23 +21,30 @@ document.querySelector(".side-scroll").addEventListener("wheel", function(e) {
     const navbar = document.getElementById('navbar');
     const sections = document.querySelectorAll('.section');
     
-    let currentSection = 'City'; // Default to the first section
-
+    let currentSection = 'Home'; // Default to the first section
+  
     for (let i = 0; i < sections.length; i++) {
       if (sideScroll.scrollLeft >= sections[i].offsetLeft && sideScroll.scrollLeft < sections[i].offsetLeft + sections[i].offsetWidth) {
         currentSection = sections[i].id; // Update to the current section
         break;
       }
     }
-
-    // Update navbar based on current section
-    if (currentSection !== 'City') {
+  
+    // Update navbar based on current section and screen width
+    if (currentSection !== 'Home' || window.innerWidth <= 840) {
       navbar.classList.add('collapsed');
       navbar.setAttribute('data-current-section', currentSection); // Update the displayed section
     } else {
       navbar.classList.remove('collapsed');
     }
   }
+  
+  // You should also call this function on window resize to ensure the navbar collapses/expands appropriately
+  window.addEventListener('resize', toggleNavbarCollapse);
+  
+  // Call the function initially to set the correct navbar state
+  toggleNavbarCollapse();
+  
 
   // Event listener for scrolling to toggle navbar state
   sideScroll.addEventListener('scroll', toggleNavbarCollapse);

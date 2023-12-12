@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <title>Tickets - Museum of Imagination</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    
+    <!-- #Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- #Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- CSS Styling & scripts -->
+    <link rel="stylesheet" href="../styles/styles2.css">
+    <script src="../scripts/scripts2.js"></script>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+        font-family: 'Exo', sans-serif;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      .jumbotron {
+        background: url('../images/jumbotronimg.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+        text-align: center;
+      }
+      .ticket-options {
+        padding: 2rem;
+      }
+      .footer {
+        background-color: #f8f8f8;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Museum of Imagination</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/museum.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/exhibition.html">Search</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../html/tickets.html">Tickets <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="support.html">Support</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Get Your Tickets Now!</h1>
+        <p class="lead">Join us to explore the future of cityscapes at the Museum of Imagination.</p>
+        <a href="#" class="btn btn-primary btn-lg" role="button">Buy Tickets</a>
+      </div>
+    </div>
+  
+    <!-- Ticket Options -->
+    <div class="ticket-options">
+      <div class="container">
+        <div class="row">
+          <!-- Ticket Option -->
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="../images/ticket_option_image.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Standard Ticket</h5>
+                <p class="card-text">Experience the museum with our standard admission ticket.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+              </div>
+            </div>
+          </div>
+          <!-- Deluxe Ticket -->
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="../images/ticket_option_image2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Deluxe Ticket</h5>
+                <p class="card-text">Experience more museum exhibits with our Deluxe ticket.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+              </div>
+            </div>
+          </div>
+          <!-- Gold Ticket -->
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="../images/ticket_option_image3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">All Access Ticket</h5>
+                <p class="card-text">Experience all our museum has to offer with our all access ticket.</p>
+                <a href="#" class="btn btn-primary">Purchase</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Footer -->
+    <div class="footer">
+      Museum of Imagination © 2023
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
