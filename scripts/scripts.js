@@ -56,6 +56,32 @@ document.querySelector(".side-scroll").addEventListener("wheel", function(e) {
       // If yes, remove the collapsed class to expand it
       this.classList.remove('collapsed');
     }
+
+    // Function to change title visibility based on scroll position
+    function toggleTitleVisibility() {
+      const homeSection = document.getElementById('Home');
+      const sideScroll = document.querySelector(".side-scroll");
+      const title = document.querySelector('.section-title');
+      const description = document.querySelector('.section-description');
+
+      // Check if the left scroll position is within the home section
+      const inHomeSection = sideScroll.scrollLeft < homeSection.offsetWidth;
+
+      // Toggle the visibility of the title and description
+      if (inHomeSection) {
+        title.classList.remove('title-hidden');
+        description.classList.remove('title-hidden');
+      } else {
+        title.classList.add('title-hidden');
+        description.classList.add('title-hidden');
+      }
+    }
+
+    // Add the event listener for the 'scroll' event to toggle title visibility
+    document.querySelector(".side-scroll").addEventListener('scroll', toggleTitleVisibility);
+
+    // Call the function on initial load
+    document.addEventListener('DOMContentLoaded', toggleTitleVisibility);
   });
 });
 

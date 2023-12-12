@@ -119,6 +119,17 @@ body, html {
     vertical-align: top;
   }
 
+  .title-hidden {
+    display: none;
+  }
+  
+  /* This targets any section that is not Home and hides the h1 and h2 within it */
+  .section:not(#Home) .section-title,
+  .section:not(#Home) .section-description {
+    display: none;
+  }
+
+
   /* Section Art and Images */
   #Home {
     background: url('../images/header_img\ 1.png') no-repeat center center fixed;
@@ -127,12 +138,12 @@ body, html {
   }
 
   #Exhibit-A {
-    background: url('images/') no-repeat center center fixed;
+    background: url('../images/section2img.png') no-repeat center center fixed;
     background-size: cover;
   }
 
   #Exhibit-B {
-    background: url('images/') no-repeat center center fixed;
+    background: url('../images/section3img.png') no-repeat center center fixed;
     background-size: cover;
   }
 
