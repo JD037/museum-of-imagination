@@ -28,16 +28,64 @@ body, html {
     z-index: 1000;
   }
 
+  /* Style the dropdown button */
+  .dropbtn {
+    border-radius: 50px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    top: 100%;
+    left: 0;
+    position:absolute;
+    min-width: 140px;
+    border-radius: 50px;
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 50px;
+    text-align: left;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    border-radius: 50px;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 50px;
+  }
+  
+
+  /* Show the dropdown button with a background color on hover */
+  .dropdown:hover .dropbtn {background-color: #A020F0;}
+
+
   /* Logo styles */
   .logo img {
     height: 50px; /* Adjust the size as needed */
   }
 
-/* Style for the logo image */
-.logo img {
-  max-height: 70px; /* Set the maximum height for logo */
-  max-width: 200px; /* Set the maxium width for logo */
-}
+  /* Style for the logo image */
+  .logo img {
+    max-height: 70px; /* Set the maximum height for logo */
+    max-width: 200px; /* Set the maxium width for logo */
+  }
 
   .navbar ul {
     display: flex;
@@ -117,6 +165,8 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     vertical-align: top;
+    position: relative;
+    overflow: hidden;
   }
 
   .title-hidden {
@@ -127,6 +177,11 @@ body, html {
   .section:not(#Home) .section-title,
   .section:not(#Home) .section-description {
     display: none;
+    position: absolute;
+    top: 50%;  /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    z-index: 10;
   }
 
 
@@ -154,45 +209,115 @@ body, html {
   /* Section Content */
   .section-title {
     position: absolute;
-    top: 52%;
-    left: 7%;
+    top: 58%;
+    left: 2%;
     transform: translateY(-50%);
     color: white;
-    font-size: 6em; /* Increase the font size */
+    font-size: 8em; /* Increase the font size */
     line-height: 1.2;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
   }
   
   .section-title span {
     display: block; /* This will stack the words vertically */
+    transition: background-color 0.3s ease;
   }
   
-  @media (max-width: 840px) {
-    .section-title {
-      font-size: 3em; /* Adjust font size for smaller screens */
-      left: 5%;
-    }
-  }
-
   .section-description {
     position: absolute;
-    top: 68%;
-    left: 8%;
+    top: 80%;
+    left: 2.2%;
     transform: translateY(-50%);
     color: white;
-    font-size: 2em; /* Increase the font size */
+    font-size: 1.7em; /* Increase the font size */
     line-height: 1.2;
     text-align: left;
   }
-  
-  
-  @media (max-width: 840px) {
-    .section-description {
-      font-size: 1em; /* Adjust font size for smaller screens */
-      left: 5%;
-    }
+
+  /* Style for the purple oval buttons */
+  .cta-button {
+    background-color: #A020F0; /* Purple color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Gives the oval shape */
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block;
+    margin: 0 5px; /* Spacing between buttons if necessary */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+  }
+
+  /* Hover effect for the button */
+  .cta-button:hover {
+    background-color: #7f1ae5; /* Slightly darker purple on hover */
+  }
+
+  .cta-button-header {
+    background-color: #A020F0; /* Purple color */
+    color: white;
+    position: absolute;
+    top: 83%;
+    left: 1.8%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* Gives the oval shape */
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block;
+    margin: 0 5px; /* Spacing between buttons if necessary */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+
+  }
+
+  /* Hover effect for the button */
+  .cta-button-header:hover {
+    background-color: #7f1ae5; /* Slightly darker purple on hover */
+  }
+
+  .explore-next-section {
+    position: relative; /* Adjust as needed */
+    top: 91.5%;
+    left: 55%;
+    font-size: 2em; /* Adjust as needed */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and arrow */
+    color: white;
+  }
+
+  .explore-next-section:hover {
+    color: #7f1ae5;
   }
   
+  .next-section-arrow {
+    font-size: 2em; /* Adjust as needed */
+    transition: transform 0.3s ease;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .next-section-arrow:hover {
+    transform: translateX(5px); /* Arrow moves to the right on hover */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .explore-next-section {
+      font-size: 1em; /* Smaller font size on mobile */
+      bottom: 10%; /* Adjust the position from bottom as needed */
+      gap: 10px; /* Less gap on mobile */
+    }
+
+    .next-section-arrow {
+      font-size: 1.5em; /* Adjust arrow size if necessary */
+    }
+  }
   
 
 /***********************************************/
