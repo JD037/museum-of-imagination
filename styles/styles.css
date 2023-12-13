@@ -300,24 +300,13 @@ body, html {
     transition: transform 0.3s ease;
     color: white;
     text-decoration: none;
+    min-width: 100px;
   }
   
   .next-section-arrow:hover {
     transform: translateX(5px); /* Arrow moves to the right on hover */
   }
   
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .explore-next-section {
-      font-size: 1em; /* Smaller font size on mobile */
-      bottom: 10%; /* Adjust the position from bottom as needed */
-      gap: 10px; /* Less gap on mobile */
-    }
-
-    .next-section-arrow {
-      font-size: 1.5em; /* Adjust arrow size if necessary */
-    }
-  }
   
 
 /***********************************************/
