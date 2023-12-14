@@ -225,9 +225,36 @@ body, html {
 	transform: translateY(-50%);
 	color: white;
 	font-size: 1.5em;
-	/* Increase the font size */
     line-height: 1.2;
 	text-align: left;}
+
+
+/* Section 2 content */
+
+/* Override for the text block to allow normal wrapping */
+.side-scroll .text-block {
+    white-space: normal;
+    
+}
+.text-block {
+	color: #fff; /* Assuming white text as per the image */
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+	border-left: 5px solid #007bff; /* Bootstrap primary color for the vertical line */
+	padding-left: 20px; /* Spacing before the text to align with the vertical line */
+	margin-bottom: 30px; /* Spacing after the block */
+	max-width: 1000px;
+}
+	
+h2.display-4 {
+	font-weight: 300; /* Lighter font weight for the title */
+	margin-bottom: 20px; /* Spacing after the title */
+}
+	
+p.lead {
+	font-size: 1.25rem; /* Larger font size for the paragraph */
+	font-weight: 300; /* Lighter font weight for the paragraph */
+}	
+	
 
 /* Style for the purple oval buttons */
   .cta-button {
