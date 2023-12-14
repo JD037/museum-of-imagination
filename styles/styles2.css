@@ -20,7 +20,11 @@
 }
 
 body {
+<<<<<<< HEAD
   background: rgb(255, 255, 255);
+=======
+  background: rgb(154, 226, 244);
+>>>>>>> 3997271b6f6da78fbaf6602a3a3d8f4d96b6eb33
   margin: 0;
 }
 
@@ -59,7 +63,7 @@ header a:hover {
   font-size: 12px!important;
 }
 
-/****-- NAV TAB ---******/
+/***********-- NAV TAB ---***************/
 
 #nav-menu-btn {
   background-color: rgb(206, 221, 245);
@@ -101,14 +105,12 @@ header a:hover {
   color: rgb(47, 224, 255);
 }
 
-
-/******* TABLE & MOBILE VERSION -************/ 
+/************* TABLE & MOBILE VERSION -************/ 
 
 @media (max-width: 1200px) {
   header {
       background-position: 50% 50%;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -247,6 +249,77 @@ header a:hover {
 ::placeholder {
 color: #6666d0;
 }
+
+
+/******   SUPPORT WEBPAGE SECTION  *******/
+
+
+.supportSection {
+  background: url('../images/image2.jpg') no-repeat center center;
+  background-size: cover;
+  color: rgb(84, 59, 223);
+  text-align: center;
+}
+
+.navItemSupport nav-link {
+ color: rgb(15, 9, 57);
+}  
+
+/***************************************/
+/******   DONATIONS CARDS       *******/
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  background-color: #a7f1eb;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Arial', sans-serif; /* Specify your preferred font-family here */
+  font-weight: bold; /* Adjust font weight if needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.card-text {
+  color: #555;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.input-group {
+  margin-top: 15px;
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+
 
 
 /************  FOOTER SECTION ****************/
