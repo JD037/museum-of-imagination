@@ -1,3 +1,9 @@
+/* Importing Google fonts - Open Sans, Kalni */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+
+
 /* Global styles */
 body, html {
     font-family: 'Exo', sans-serif;
@@ -8,34 +14,89 @@ body, html {
     background-color: #f8f8f8;
   }
 
-  /* Navigation bar styles */
+  /* Navbar styles */
   .navbar {
+    display: flex;
+    justify-content: space-between; /* This will push the logo to the left and the nav links to the right */
+    align-items: center;
+    padding: 20px 0;
+    width: 100%; /* Ensure the navbar spans the full width */
+    box-sizing: border-box; /* This ensures padding is included in the width */
     position: fixed;
-    top: 5%; 
-    left: 25%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    padding-right: 80px;
+    padding-top: 50px;
     z-index: 1000;
-    padding: 10px;
-    border-radius: 5px;
+  }
+
+  /* Style the dropdown button */
+  .dropbtn {
+    border-radius: 50px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    top: 100%;
+    left: 0;
+    position:absolute;
+    min-width: 140px;
+    border-radius: 50px;
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 50px;
+    text-align: left;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    border-radius: 50px;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 50px;
   }
   
-/* Style for the logo container */
-.logo {
-  margin-left: 20px; /* Adjust the margin as needed to control spacing */
-  margin-top: 30px;
-}
 
-/* Style for the logo image */
-.logo img {
-  max-height: 70px; /* Set the maximum height for logo */
-  max-width: 200px; /* Set the maxium width for logo */
-}
+  /* Show the dropdown button with a background color on hover */
+  .dropdown:hover .dropbtn {background-color: #A020F0;}
+
+
+  /* Logo styles */
+  .logo img {
+    height: 35px; /* Adjust the size as needed */
+    margin-left: 80px;
+  }
+
+  /* Style for the logo image */
+  .logo img {
+    max-height: 70px; /* Set the maximum height for logo */
+    max-width: 200px; /* Set the maxium width for logo */
+  }
 
   .navbar ul {
     display: flex;
     justify-content: center; 
     align-items: center; 
     padding: 0;
+    list-style: none; /* Ensure no bullets */
+    margin: 0; /* Reset default margin */
   }
 
   .navbar li {
@@ -59,13 +120,13 @@ body, html {
   }
   .navbar.collapsed::after {
     content: attr(data-current-section);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 0 auto;
   }
 
   /* You may also want to add styles for hover effects and other interactions */
   .navbar.collapsed:hover::after {
-    color: #363636; /* Darker color on hover, adjust as needed */
+    color: #b4b2b2; /* Darker color on hover, adjust as needed */
   }
 
   /* Link styles */
@@ -77,7 +138,7 @@ body, html {
 
   /* Hover effect for links */
   .navbar li a:hover {
-    color: #363636;
+    color: #b1adad;
   }
 
   /* Responsive design adjustments for smaller screens */
@@ -107,31 +168,463 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     vertical-align: top;
+    position: relative;
+    overflow: hidden;
   }
 
+  .title-hidden {
+    display: none;
+  }
+  
+  /* This targets any section that is not Home and hides the h1 and h2 within it */
+  .section:not(#Home) .section-title,
+  .section:not(#Home) .section-description {
+    display: none;
+    position: absolute;
+    top: 50%;  /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+
   /* Section Art and Images */
-  #City {
-    background-image: url('images/header_img 1.png');
-    background-color: var(--background-color);
-    max-width: 100%;
-    height: auto;
-    background-position-x: center;
+  #Home {
+    background: url('../images/header_img\ 1.png') no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center; */
+    
   }
 
   #Exhibit-A {
-    background: url('images/') no-repeat center center fixed;
+    background: url('../images/section2img.png') no-repeat center center fixed;
     background-size: cover;
   }
 
-  #Exhibit-B {
-    background: url('images/') no-repeat center center fixed;
+   #Exhibit-B {
+    background: url('../images/section3img.png') no-repeat center center fixed;
     background-size: cover;
   }
-
   #Exhibit-C {
     background: url('images/') no-repeat center center fixed;
     background-size: cover;
   }
+  /* Section Content */
+  .section-title {
+    position: absolute;
+    top: 58%;
+    left: 2%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 8em; /* Increase the font size */
+    line-height: 1.2;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-title span {
+    display: block; /* This will stack the words vertically */
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-description {
+    position: absolute;
+    top: 80%;
+    left: 2.2%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.7em; /* Increase the font size */
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  /* Style for the purple oval buttons */
+  .cta-button {
+    background-color: #A020F0; /* Purple color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Gives the oval shape */
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block;
+    margin: 0 5px; /* Spacing between buttons if necessary */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+  }
+
+  /* Hover effect for the button */
+  .cta-button:hover {
+    background-color: #7f1ae5; /* Slightly darker purple on hover */
+  }
+
+  .cta-button-header {
+    background-color: #A020F0; /* Purple color */
+    color: white;
+    position: absolute;
+    top: 83%;
+    left: 1.8%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* Gives the oval shape */
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block;
+    margin: 0 5px; /* Spacing between buttons if necessary */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+
+  }
+
+  /* Hover effect for the button */
+  .cta-button-header:hover {
+    background-color: #7f1ae5; /* Slightly darker purple on hover */
+  }
+
+  .explore-next-section {
+    position: relative; /* Adjust as needed */
+    top: 91.5%;
+    left: 55%;
+    font-size: 2em; /* Adjust as needed */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and arrow */
+    color: white;
+  }
+
+  .explore-next-section:hover {
+    color: #7f1ae5;
+  }
+  
+  .next-section-arrow {
+    font-size: 2em; /* Adjust as needed */
+    transition: transform 0.3s ease;
+    color: white;
+    text-decoration: none;
+    min-width: 100px;
+  }
+  
+  .next-section-arrow:hover {
+    transform: translateX(5px); /* Arrow moves to the right on hover */
+  }
+  
+  
+
+/***********************************************/
+/**************   SEARCH WEBPAGE  **************/
+/**************   TICKETS WEBPAGE ***************/
+/***********************************************/
+/***********************************************/
+
+/**** --------- Header Section --------****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: rgb(228, 244, 238);
+  margin: 0;
+}
+
+header {
+  background-image: url("./images/city-bkg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  color: #C371FF!important; 
+}
+
+.logo {
+  width: auto;
+  height: 30px;
+}
+
+.nav-item {
+  font-size: 12px!important;
+}
+
+/************* HERO SECTION *********************/
+
+.courseFontHero {
+  font-size: 40px;
+  font-family: 'Kalnia'!important;
+  font-weight: 400;
+  font-weight: bold;
+  color: rgb(47, 224, 255);
+}
+
+
+/******* TABLE & MOBILE VERSION -************/ 
+
+@media (max-width: 1200px) {
+  header {
+      background-position: 50% 50%;
+  }
+
+  .pros img {
+      width: 75%!important;
+      height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+      background-position: 45% 50%;
+  }
+
+  .hamburger {
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+      color: #afb6c7;
+  }
+
+  #nav-toggle:checked ~ .hamburger {
+      max-height: 100vh;
+      overflow: hidden;
+  }
+
+  .display-1 {
+      font-size: 4rem;
+  }
+
+  .pros .h5 {
+      font-size: 1.1rem;
+  }
+}
+
+
+/************ EXHIBITIONS CARDS SECTION *************/   
+
+.results-section {
+  margin-bottom: 10px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 10px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card-list .card-item {
+  background: #fff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
+
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.card-list .exhibition_No1 {
+  background-color: #F7DFF5; 
+  color: #B22485;
+}   
+
+.card-list .exhibition_No2 {
+  background-color: #d1e8ff;
+  color: #2968a8;
+}
+
+.card-list .exhibition_No3 {
+  background-color: #d6f8d6; 
+  color: #205c20;
+}
+
+.card-item h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 40px;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow  {
+  background: #000;
+  color: #fff; 
+}
+
+@media (max-width: 1200px) {
+  .card-list .card-item {
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .card-list {
+      margin: 0 auto;
+  }
+}
+
+/****  Title Exhibitions ****/
+
+.courseFont {
+  font-size: 32px;
+  font-family: 'Coiny'!important;
+  font-weight: 400;
+}
+
+
+.form-control
+::placeholder {
+color: #6666d0;
+}
+
+
+/************  FOOTER SECTION ****************/
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background: #10182F;
+  border-radius: 6px;
+  padding: 2px;
+  height: 300px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 20px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+/* Responsive styles for smaller screens (max-width: 760px) */
+  
+@media screen and (max-width: 760px) {
+  .footer {
+      height: auto; /* Adjust the height for smaller screens */
+  }
+
+  .footer .footer-row {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 10px;
+  }
+
+  .footer-row .footer-col {
+      flex: 1 1 100%;
+  }
+
+  .footer-col .icons {
+      margin-top: 15px;
+  }
+}

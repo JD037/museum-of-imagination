@@ -19,12 +19,14 @@ body, html {
     display: flex;
     justify-content: space-between; /* This will push the logo to the left and the nav links to the right */
     align-items: center;
-    padding: 10px;
+    padding: 20px 0;
     width: 100%; /* Ensure the navbar spans the full width */
     box-sizing: border-box; /* This ensures padding is included in the width */
     position: fixed;
     top: 0;
     left: 0;
+    padding-right: 80px;
+    padding-top: 50px;
     z-index: 1000;
   }
 
@@ -78,7 +80,8 @@ body, html {
 
   /* Logo styles */
   .logo img {
-    height: 50px; /* Adjust the size as needed */
+    height: 35px; /* Adjust the size as needed */
+    margin-left: 80px;
   }
 
   /* Style for the logo image */
@@ -197,11 +200,10 @@ body, html {
     background-size: cover;
   }
 
-  #Exhibit-B {
+   #Exhibit-B {
     background: url('../images/section3img.png') no-repeat center center fixed;
     background-size: cover;
   }
-
   #Exhibit-C {
     background: url('images/') no-repeat center center fixed;
     background-size: cover;
@@ -325,7 +327,7 @@ body, html {
 }
 
 body {
-  background: rgb(228, 244, 238);
+  background: rgb(0, 0, 0);
   margin: 0;
 }
 
@@ -342,9 +344,16 @@ header a:hover {
   color: #C371FF!important; 
 }
 
-.logo {
-  width: auto;
-  height: 30px;
+/* Logo styles */
+.logo img {
+  height: 35px; /* Adjust the size as needed */
+  margin-left: 80px;
+}
+
+/* Style for the logo image */
+.logo img {
+  max-height: 70px; /* Set the maximum height for logo */
+  max-width: 200px; /* Set the maxium width for logo */
 }
 
 .nav-item {

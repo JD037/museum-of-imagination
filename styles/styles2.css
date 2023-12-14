@@ -20,7 +20,7 @@
 }
 
 body {
-  background: rgb(228, 244, 238);
+  background: rgb(255, 255, 255);
   margin: 0;
 }
 
@@ -40,6 +40,19 @@ header a:hover {
 .logo {
   width: auto;
   height: 30px;
+}
+
+/* Change the background color of the navbar to black */
+.navbar {
+  background-color: black;
+  /* You can also specify the text color if needed */
+  color: white; /* White text on a black background */
+}
+
+/* Optional: You can add additional styles to the navbar-brand if needed */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Vertically center the logo and text */
 }
 
 .nav-item {

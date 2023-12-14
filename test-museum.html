@@ -10,25 +10,51 @@
   <title>Museum of Imagination</title>
 </head>
 <body>
+  
   <nav class="navbar" id="navbar">
     <div class="logo">
-    <img src="images/city_logo.png" alt="Logo">
+      <a href="museum.html">
+        <img src="../images/city_logo.png" alt="Logo">
+      </a>
     </div>
     <ul>
       <!-- Navigation links -->
-      <li><a href="#City">City</a></li>
-      <li><a href="#Exhibit-A">Exhibit A</a></li>
-      <li><a href="#Exhibit-B">Exhibit B</a></li>
-      <li><a href="#Exhibit-C">Exhibit C</a></li>
+      <li><a href="../html/tickets.html">Support</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exhibits</a>
+        <div class="dropdown-content">
+          <a href="#Home">Home</a>
+          <a href="#Exhibit-A">Exhibit A</a>
+          <a href="#Exhibit-B">Exhibit B</a>
+          <a href="#Exhibit-C">Exhibit C</a>
+        </div>
+      </li>
+      <li><a href="../html/exhibition.html">Browse</a></li>
+      <li><a href="../html/tickets.html" class="cta-button">Tickets</a></li>
     </ul>
   </nav>
   <div class="side-scroll">
+    
     <!-- Main sections for horizontal scrolling -->
-    <div class="section" id="City" style="background-color: rgb(0, 0, 0);"></div>
-    <div class="section" id="Exhibit-A" style="background-color: lightgreen;"></div>
-    <div class="section" id="Exhibit-B" style="background-color: coral;"></div>
-    <div class="section" id="Exhibit-C" style="background-color: lightgoldenrodyellow;"></div>
+    <div class="section" id="Home" style="background-color: rgb(0, 0, 0);">
+      <h1 class="section-title">
+        <span>FUTURE</span>
+        <span>CITY</span>
+        <span>SCAPES</span>
+      </h1>
+      <h2 class="section-description">A Glimpse into America's Future Cities</h2>
+      <a href="../html/tickets.html" class="cta-button-header">GET YOUR TICKETS</a>
+      <div class="explore-next-section">
+        Explore the possibilities
+        <a href="#Exhibit-A" class="next-section-arrow">→</a>
+      </div>      
+    </div>
+
+    <!-- Sections -->
+    <div class="section" id="Exhibit-A" style="background-color: rgb(0, 0, 0);"></div>
+    <div class="section" id="Exhibit-B" style="background-color: rgb(0, 0, 0);"></div>
+    <div class="section" id="Exhibit-C" style="background-color: rgb(0, 0, 0);"></div>
   </div>
-  <script src="scripts.js"></script> <!-- Link to external JavaScript -->
+  <script src="../scripts/scripts.js"></script> <!-- Link to external JavaScript -->
 </body>
 </html>
