@@ -5,13 +5,22 @@
 
 
 /* Global styles */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
 body, html {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     height: 105vh; /* Using viewport height for full height */
     overflow: hidden;
     background-color: #f8f8f8;
+    
   }
 
   /* Navbar styles */
@@ -278,7 +287,8 @@ body, html {
   .cta-button-header:hover {
     background-color: #7f1ae5; /* Slightly darker purple on hover */
   }
-
+  
+  /* Possibilities arrow */
   .explore-next-section {
     position: relative; /* Adjust as needed */
     top: 91.5%;
@@ -306,323 +316,14 @@ body, html {
   .next-section-arrow:hover {
     transform: translateX(5px); /* Arrow moves to the right on hover */
   }
-  
-  
-
-/***********************************************/
-/**************   SEARCH WEBPAGE  **************/
-/**************   TICKETS WEBPAGE ***************/
-/***********************************************/
-/***********************************************/
-
-/**** --------- Header Section --------****/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
-
-body {
-  background: rgb(228, 244, 238);
-  margin: 0;
-}
-
-header {
-  background-image: url("./images/city-bkg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-header a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-  color: #C371FF!important; 
-}
-
-.logo {
-  width: auto;
-  height: 30px;
-}
-
-.nav-item {
-  font-size: 12px!important;
-}
-
-/************* HERO SECTION *********************/
-
-.courseFontHero {
-  font-size: 40px;
-  font-family: 'Kalnia'!important;
-  font-weight: 400;
-  font-weight: bold;
-  color: rgb(47, 224, 255);
-}
 
 
-/******* TABLE & MOBILE VERSION -************/ 
-
-@media (max-width: 1200px) {
-  header {
-      background-position: 50% 50%;
-  }
-
-  .pros img {
-      width: 75%!important;
-      height: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  header {
-      background-position: 45% 50%;
-  }
-
-  .hamburger {
-      max-height: 0px;
-      overflow: hidden;
-      transition: max-height 0.5s ease-in-out;
-      color: #afb6c7;
-  }
-
-  #nav-toggle:checked ~ .hamburger {
-      max-height: 100vh;
-      overflow: hidden;
-  }
-
-  .display-1 {
-      font-size: 4rem;
-  }
-
-  .pros .h5 {
-      font-size: 1.1rem;
-  }
-}
 
 
-/************ EXHIBITIONS CARDS SECTION *************/   
-
-.results-section {
-  margin-bottom: 10px;
-}
-
-.card-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  max-width: 1250px;
-  margin: 10px auto;
-  padding: 20px;
-  gap: 20px;
-}
-
-.card-list .card-item {
-  background: #fff;
-  padding: 26px;
-  border-radius: 8px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
-  list-style: none;
-  cursor: pointer;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: border 0.5s ease;
-}
-
-.card-list .card-item:hover {
-  border: 2px solid #000;
-}
-
-.card-list .card-item img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.card-list span {
-  display: inline-block;
-  background: #F7DFF5;
-  margin-top: 32px;
-  padding: 8px 15px;
-  font-size: 0.75rem;
-  border-radius: 50px;
-  font-weight: 600;
-}
-
-.card-list .exhibition_No1 {
-  background-color: #F7DFF5; 
-  color: #B22485;
-}   
-
-.card-list .exhibition_No2 {
-  background-color: #d1e8ff;
-  color: #2968a8;
-}
-
-.card-list .exhibition_No3 {
-  background-color: #d6f8d6; 
-  color: #205c20;
-}
-
-.card-item h3 {
-  color: #000;
-  font-size: 1.438rem;
-  margin-top: 28px;
-  font-weight: 600;
-}
-
-.card-item .arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(-35deg);
-  height: 40px;
-  width: 40px;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 50%;
-  margin-top: 40px;
-  transition: 0.2s ease;
-}
-
-.card-list .card-item:hover .arrow  {
-  background: #000;
-  color: #fff; 
-}
-
-@media (max-width: 1200px) {
-  .card-list .card-item {
-      padding: 15px;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .card-list {
-      margin: 0 auto;
-  }
-}
-
-/****  Title Exhibitions ****/
-
-.courseFont {
-  font-size: 32px;
-  font-family: 'Coiny'!important;
-  font-weight: 400;
-}
 
 
-.form-control
-::placeholder {
-color: #6666d0;
-}
 
 
-/************  FOOTER SECTION ****************/
 
-.footer {
-  width: 100%;
-  margin: 0 auto;
-  background: #10182F;
-  border-radius: 6px;
-  padding: 2px;
-  height: 300px;
-}
 
-.footer .footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3.5rem;
-  padding: 20px;
-}
-.footer-row .footer-col h4 {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.footer-col .links {
-  margin-top: 20px;
-}
-.footer-col .links li {
-  list-style: none;
-  margin-bottom: 10px;
-}
-.footer-col .links li a {
-  text-decoration: none;
-  color: #bfbfbf;
-}
-.footer-col .links li a:hover {
-  color: #fff;
-}
-.footer-col p {
-  margin: 20px 0;
-  color: #bfbfbf;
-  max-width: 300px;
-}
-.footer-col form {
-  display: flex;
-  gap: 5px;
-}
-.footer-col input {
-  height: 40px;
-  border-radius: 6px;
-  background: none;
-  width: 100%;
-  outline: none;
-  border: 1px solid #7489C6 ;
-  caret-color: #fff;
-  color: #fff;
-  padding-left: 10px;
-}
-.footer-col input::placeholder {
-  color: #ccc;
-}
- .footer-col form button {
-  background: #fff;
-  outline: none;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.2s ease;
-  font-size: 14px;
-}
-.footer-col form button:hover {
-  background: #cecccc;
-}
-.footer-col .icons {
-  display: flex;
-  margin-top: 30px;
-  gap: 30px;
-  cursor: pointer;
-}
-.footer-col .icons i {
-  color: #afb6c7;
-}
-.footer-col .icons i:hover  {
-  color: #fff;
-}
 
-/* Responsive styles for smaller screens (max-width: 760px) */
-  
-@media screen and (max-width: 760px) {
-  .footer {
-      height: auto; /* Adjust the height for smaller screens */
-  }
-
-  .footer .footer-row {
-      flex-direction: column;
-      gap: 1.5rem;
-      padding: 10px;
-  }
-
-  .footer-row .footer-col {
-      flex: 1 1 100%;
-  }
-
-  .footer-col .icons {
-      margin-top: 15px;
-  }
-}
