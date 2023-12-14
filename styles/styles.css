@@ -15,18 +15,16 @@ body, html {
   }
 
   /* Navbar styles */
-  .navbar {
+  .navbar.navbar-expand-lg {
     display: flex;
     justify-content: space-between; /* This will push the logo to the left and the nav links to the right */
     align-items: center;
-    padding: 20px 0;
+    padding: 10px;
     width: 100%; /* Ensure the navbar spans the full width */
     box-sizing: border-box; /* This ensures padding is included in the width */
     position: fixed;
     top: 0;
     left: 0;
-    padding-right: 80px;
-    padding-top: 50px;
     z-index: 1000;
   }
 
@@ -80,8 +78,7 @@ body, html {
 
   /* Logo styles */
   .logo img {
-    height: 35px; /* Adjust the size as needed */
-    margin-left: 80px;
+    height: 50px; /* Adjust the size as needed */
   }
 
   /* Style for the logo image */
@@ -143,7 +140,7 @@ body, html {
 
   /* Responsive design adjustments for smaller screens */
   @media screen and (max-width: 800px) {
-    .navbar {
+    .navbar.navbar-expand-lg {
       top: 0;
       left: 0;
       transform: none;
@@ -197,13 +194,14 @@ body, html {
 
   #Exhibit-A {
     background: url('../images/section2img.png') no-repeat center center fixed;
-    background-size: cover;
+    background-size: contain;
   }
 
-   #Exhibit-B {
+  #Exhibit-B {
     background: url('../images/section3img.png') no-repeat center center fixed;
-    background-size: cover;
+    background-size: contain;
   }
+
   #Exhibit-C {
     background: url('images/') no-repeat center center fixed;
     background-size: cover;
@@ -211,11 +209,11 @@ body, html {
   /* Section Content */
   .section-title {
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 2%;
     transform: translateY(-50%);
     color: white;
-    font-size: 8em; /* Increase the font size */
+    font-size: 7em; /* Increase the font size */
     line-height: 1.2;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
@@ -229,11 +227,11 @@ body, html {
   
   .section-description {
     position: absolute;
-    top: 80%;
+    top: 78%;
     left: 2.2%;
     transform: translateY(-50%);
     color: white;
-    font-size: 1.7em; /* Increase the font size */
+    font-size: 1.5em; /* Increase the font size */
     line-height: 1.2;
     text-align: left;
   }
@@ -284,7 +282,7 @@ body, html {
   .explore-next-section {
     position: relative; /* Adjust as needed */
     top: 91.5%;
-    left: 55%;
+    left: 48%;
     font-size: 2em; /* Adjust as needed */
     cursor: pointer;
     display: flex;
@@ -327,7 +325,7 @@ body, html {
 }
 
 body {
-  background: rgb(0, 0, 0);
+  background: rgb(228, 244, 238);
   margin: 0;
 }
 
@@ -344,16 +342,9 @@ header a:hover {
   color: #C371FF!important; 
 }
 
-/* Logo styles */
-.logo img {
-  height: 35px; /* Adjust the size as needed */
-  margin-left: 80px;
-}
-
-/* Style for the logo image */
-.logo img {
-  max-height: 70px; /* Set the maximum height for logo */
-  max-width: 200px; /* Set the maxium width for logo */
+.logo {
+  width: auto;
+  height: 30px;
 }
 
 .nav-item {
