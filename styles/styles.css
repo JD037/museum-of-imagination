@@ -183,21 +183,22 @@ body, html {
 	z-index: 10;}
 
 /* Section Art and Images */
-  #Home {
-	background: url('../images/header_img\ 1.png') no-repeat center center fixed;
-	background-size: cover;}
+.background-image {
+    /* Full page background */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the image stays behind the content */
 
-#Exhibit-A {
-	background: url('../images/section2img.png') no-repeat center center fixed;
-	background-size: contain;}
+    /* Set the background image */
+    background-image: url('..images/background_image.jpeg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
 
-#Exhibit-B {
-	background: url('../images/section3img.png') no-repeat center center fixed;
-	background-size: contain;}
-
-#Exhibit-C {
-	background: url('images/') no-repeat center center fixed;
-	background-size: cover;}
 
 /* Section Content */
   .section-title {
