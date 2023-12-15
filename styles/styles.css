@@ -185,7 +185,8 @@ body, html {
 /* Section Art and Images */
 .background-image {
     /* Full page background */
-    position: fixed; 
+    white-space: normal;
+	position: fixed; 
     top: 0; 
     left: 0;
     right: 0;
@@ -235,7 +236,6 @@ body, html {
 /* Override for the text block to allow normal wrapping */
 .side-scroll .text-block {
     white-space: normal;
-    
 }
 .text-block {
 	color: #fff; /* Assuming white text as per the image */
