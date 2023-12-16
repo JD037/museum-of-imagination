@@ -18,7 +18,8 @@ body, html {
 	height: 105vh;
 	/* Using viewport height for full height */
     overflow: hidden;
-	background-color: #f8f8f8;}
+}
+	
 
 /* Navbar styles */
   .navbar.navbar-expand-lg {
@@ -162,7 +163,7 @@ body, html {
 	width: 3000px;
 	height: 100%;
 	padding: 20px;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	vertical-align: top;
 	position: relative;
 	overflow: hidden;}
@@ -185,8 +186,7 @@ body, html {
 /* Section Art and Images */
 .background-image {
     /* Full page background */
-    white-space: normal;
-	position: fixed; 
+    position: fixed; 
     top: 0; 
     left: 0;
     right: 0;
@@ -194,8 +194,9 @@ body, html {
     z-index: -1; /* Ensure the image stays behind the content */
 
     /* Set the background image */
-    background-image: url('..images/background_image.jpeg');
+    background-image: url('../images/background_image.jpg'); /* Correct the path if necessary */
     background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* This ensures that the background is fixed during scrolling */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
 }
@@ -336,15 +337,3 @@ p.lead {
 .next-section-arrow:hover {
 	transform: translateX(5px);
 	/* Arrow moves to the right on hover */}
-
-
-
-
-
-
-
-
-
-
-
-
