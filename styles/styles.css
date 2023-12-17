@@ -27,7 +27,7 @@ body, html {
 	justify-content: space-between;
 	/* This will push the logo to the left and the nav links to the right */
     align-items: center;
-	padding: 10px;
+	padding: 80px;
 	width: 100%;
 	/* Ensure the navbar spans the full width */
     box-sizing: border-box;
@@ -78,11 +78,6 @@ body, html {
 /* Show the dropdown button with a background color on hover */
   .dropdown:hover .dropbtn {
 	background-color: #A020F0;}
-
-/* Logo styles */
-  .logo img {
-	height: 50px;
-	/* Adjust the size as needed */}
 
 /* Style for the logo image */
   .logo img {
@@ -167,6 +162,38 @@ body, html {
 	vertical-align: top;
 	position: relative;
 	overflow: hidden;}
+
+	/* Section styles */
+	.section-2 {
+		display: inline-block;
+		width: 3000px; /* Or as required */
+		height: 100%;
+		padding: 20px;
+		position: relative; /* For positioning child elements */
+		overflow: hidden;
+	}
+	
+	.text-container {
+		position: absolute; /* Position relative to .section-2 */
+		top: 20%;  /* Adjust these values as needed */
+		left: 20%; /* Adjust these values as needed */
+		transform: translate(-50%, -50%); /* Center the container */
+		width: 40%; /* Set a width for the container */
+		background: none;
+		padding: 0px; /* Spacing inside the container */
+		/* Add text styles below */
+		color: #ffffff;
+		text-align: center;
+	}
+	
+	.display-4, .lead {
+		/* Text-specific styles */
+		margin: 0; /* Remove default margins */
+		padding: 10px 0; /* Space between text lines */
+		word-wrap: break-word;
+		/* Add other text styles as needed */
+	}
+		
 
 .title-hidden {
 	display: none;}
