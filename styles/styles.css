@@ -185,15 +185,15 @@ body, html {
 /* Upper left corner styling */
 .upper-left {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 150px;
+    left: 50px;
 }
 
 /* Lower right corner styling */
 .lower-right {
     position: fixed;
-    bottom: 300px;
-    right: 100px;
+    bottom: 250px;
+    right: 50px;
 }
 
 /* Title and paragraph specific styles */
@@ -219,6 +219,12 @@ body, html {
 	#Exhibit-A {
 		background: none;
 	  }
+	
+	.image-container {
+		max-width: 100%;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
+	}
    
 	  #Exhibit-B {
 		background: none;
