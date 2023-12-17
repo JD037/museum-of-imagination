@@ -12,6 +12,10 @@
 	font-family: 'Open Sans', sans-serif;}
 
 body, html {
+	background-image: url('../images/background_image.jpg'); /* Correct the path if necessary */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -163,30 +167,78 @@ body, html {
 	position: relative;
 	overflow: hidden;}
 
-	/* Section styles */
-	.section-2 {
-		display: inline-block;
-		width: 3000px; /* Or as required */
-		height: 100%;
-		padding: 20px;
-		position: relative; /* For positioning child elements */
-		overflow: hidden;
-	}
+	/* Styles for sections */
+
+.section-2, .section-3, .section-4 {
+    position: relative; /* Needed for absolute positioning of child elements */
+    padding: 20px;
+	display: inline-block;
+	width: 3000px;
+	height: 100%;
+	padding: 20px;
+	/* box-sizing: border-box; */
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Upper left corner styling */
+.upper-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Lower right corner styling */
+.lower-right {
+    position: fixed;
+    bottom: 300px;
+    right: 100px;
+}
+
+/* Title and paragraph specific styles */
+.display-4, h2, .lead, p {
+    margin: 0;
+    padding: 5px;
+    color: #ffffff; /* Adjust text color as needed */
+}
+
+/* Additional styling for titles */
+.display-4, h2 {
+    font-size: 1.5rem; /* Adjust title size as needed */
+}
+
+/* Additional styling for paragraphs */
+.lead, p {
+    font-size: 1rem; /* Adjust paragraph size as needed */
+}
+
+
+/* Exihibition Sections */
+
+	#Exhibit-A {
+		background: none;
+	  }
+   
+	  #Exhibit-B {
+		background: none;
+	  }
+
+	  #Exhibit-C {
+		background: none;
+	  }
 	
 	.text-container {
 		position: absolute; /* Position relative to .section-2 */
-		top: 20%;  /* Adjust these values as needed */
-		left: 20%; /* Adjust these values as needed */
-		transform: translate(-50%, -50%); /* Center the container */
 		width: 40%; /* Set a width for the container */
 		background: none;
 		padding: 0px; /* Spacing inside the container */
 		/* Add text styles below */
 		color: #ffffff;
-		text-align: center;
+		text-align: left;
 	}
 	
-	.display-4, .lead {
+	.lead {
 		/* Text-specific styles */
 		margin: 0; /* Remove default margins */
 		padding: 10px 0; /* Space between text lines */
@@ -209,25 +261,6 @@ body, html {
 	/* Adjust as needed */
     transform: translate(-50%, -50%);
 	z-index: 10;}
-
-/* Section Art and Images */
-.background-image {
-    /* Full page background */
-    position: fixed; 
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* Ensure the image stays behind the content */
-
-    /* Set the background image */
-    background-image: url('../images/background_image.jpg'); /* Correct the path if necessary */
-    background-size: cover; /* Cover the entire page */
-    background-attachment: fixed; /* This ensures that the background is fixed during scrolling */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-}
-
 
 /* Section Content */
   .section-title {
@@ -258,9 +291,6 @@ body, html {
     line-height: 1.2;
 	text-align: left;}
 
-
-/* Section 2 content */
-
 /* Override for the text block to allow normal wrapping */
 .side-scroll .text-block {
     white-space: normal;
@@ -275,12 +305,13 @@ body, html {
 }
 	
 h2.display-4 {
-	font-weight: 300; /* Lighter font weight for the title */
+	font-size: 1.5rem;
+	
 	margin-bottom: 20px; /* Spacing after the title */
 }
 	
 p.lead {
-	font-size: 1.25rem; /* Larger font size for the paragraph */
+	font-size: 1rem; /* Larger font size for the paragraph */
 	font-weight: 300; /* Lighter font weight for the paragraph */
 }	
 	
