@@ -220,19 +220,37 @@ body, html {
 		background: none;
 	  }
 	
-	.image-container {
+	.image-container img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
+		padding-top: 300px;
+		padding-left: 500px;;
 	}
    
 	  #Exhibit-B {
 		background: none;
 	  }
 
+	  .image-container-2 img{
+		max-width: 100%;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
+		padding-top: 300px;
+		padding-left: 500px;;
+	}
+
 	  #Exhibit-C {
 		background: none;
 	  }
+
+	  .image-container-3 img{
+		max-width: 100%;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
+		padding-top: 300px;
+		padding-left: 500px;;
+	}
 	
 	.text-container {
 		position: absolute; /* Position relative to .section-2 */
