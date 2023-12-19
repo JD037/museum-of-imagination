@@ -23,15 +23,23 @@ Here are a few example sentences you can choose from:
 “A clockwork wonderland filled with fantastical contraptions.”
 Your challenge is to create a captivating and immersive web experience that showcases the chosen artwork, conveys the essence of each description, and sparks the visitors’ imagination. Whether it’s through interactive animations, parallax scrolling, or unique navigation, the goal is to transport visitors into the realm of imagination.
 
+# Website Home Page
+
+![Desing](./images/Figma_Desing.png)
+
 # General Website Template
 
-| Section                | Description                                                                                  |
-| ---------------------- | -------------------------------------------------------------------------------------------- |
-| Logo and Menu List     | A section displaying the logo of the website along with a navigation menu list.              |
-| Banner Image           | An eye-catching banner image for introducing the website's theme or purpose.                 |
-| List of Products       | Showcase various products, services, or items with images, descriptions, and pricing.        |
-| Container Sections     | Multiple customizable containers for adding content, such as text, images, or features.      |
-| Secondary Banner Image | Additional banner image for highlighting special offers, announcements, or extra content.    |
-| Contact Form Section   | Include a contact form with fields for name, email, and message submission.                  |
-| Google Map API         | Integrate the Google Maps API to display a map showing the location of the business or site. |
-| Footer                 | Footer section containing links, copyright information, and other relevant details.          |
+| Section            | Description                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------ |
+| Logo and Menu List | A section displaying the logo of the website along with a navigation menu list.                              |
+| Main page          | An eye-catching side scrolling page for introducing the website's theme or purpose.                          |
+| Exhibitions        | Showcase various exhibitions (Floating Cities, Inverted Architecture, City of Mirrors) with a searching bar. |
+| Support            | Donation page for supporting different kind of project with option to donate different amount of money.      |
+| Tickets            | Where you can get the tickes for the exhibitions.                                                            |
+| Footer             | Footer section containing links, copyright information, and other relevant details.                          |
+
+## AUTHORS
+
+<br>Alton Andrews <6139@holbertonstudents.com>
+<br>Josh Davis <6111@holbertonstudents.com>
+<br>Carlos Alarcon <6138@holbertonstudents.com>
