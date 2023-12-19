@@ -159,7 +159,7 @@ body, html {
 /* Section styles */
   .section {
 	display: inline-block;
-	width: 3000px;
+	width: 2000px;
 	height: 100%;
 	padding: 20px;
 	/* box-sizing: border-box; */
@@ -173,7 +173,7 @@ body, html {
     position: relative; /* Needed for absolute positioning of child elements */
     padding: 20px;
 	display: inline-block;
-	width: 3000px;
+	width: 2000px;
 	height: 100%;
 	padding: 20px;
 	/* box-sizing: border-box; */
@@ -181,6 +181,40 @@ body, html {
 	position: relative;
 	overflow: hidden;
 }
+
+/* Styles for Circle */
+
+.container-fluid {
+	position: relative;
+    min-height: 200px; /* Adjust this value based on the height of your navbar */
+}
+
+
+.circle {
+	position: absolute;
+	top: 200px;
+	right: 50px;
+	width: 500px;
+	height: 500px;
+	background-color: #04fff2; /* Bootstrap primary color */
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+
+.circle-text {
+	text-align: center;
+	font-size: 75px;
+}
+
+.circle-text span {
+	display: block;
+	/* This will stack the words vertically */
+    transition: background-color 0.3s ease;}
 
 /* Upper left corner styling */
 .upper-left {
