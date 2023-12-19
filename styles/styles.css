@@ -490,7 +490,7 @@ p.lead {
 	/* Arrow moves to the right on hover */}
 
 .moving-image {
-	animation: moveAround 5s infinite;
+	animation: moveAround 10s infinite;
 	position: absolute; /* or 'fixed' depending on your layout */
 	top: 10px; /* adjust as needed to place above the navbar */
 	left: 50%; /* centers the image horizontally */
