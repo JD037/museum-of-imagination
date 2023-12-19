@@ -19,24 +19,24 @@ body, html {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
-	height: 105vh;
+	height: 107vh;
 	/* Using viewport height for full height */
-    overflow: hidden;
+	overflow: hidden;
 }
-	
+
 
 /* Navbar styles */
   .navbar.navbar-expand-lg {
 	display: flex;
 	justify-content: space-between;
 	/* This will push the logo to the left and the nav links to the right */
-    align-items: center;
-	padding: 80px;
+	align-items: center;
+	padding: 50px;
 	width: 100%;
 	/* Ensure the navbar spans the full width */
-    box-sizing: border-box;
+	box-sizing: border-box;
 	/* This ensures padding is included in the width */
-    position: fixed;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1000;
@@ -89,7 +89,7 @@ body, html {
   .logo img {
 	max-height: 70px;
 	/* Set the maximum height for logo */
-    max-width: 200px;
+	max-width: 200px;
 	/* Set the maxium width for logo */}
 
 .navbar ul {
@@ -99,36 +99,17 @@ body, html {
 	padding: 0;
 	list-style: none;
 	/* Ensure no bullets */
-    margin: 0;
+	margin: 0;
 	/* Reset default margin */}
 
-.navbar li {
-	display: inline-block;
-	margin-right: 20px;}
+	.navbar li {
+		display: inline-block;
+		margin-right: 20px;}
 
 /* Adjusts the last nav item to remove extra margin */
   .navbar li:last-child {
 	margin-right: 0;}
 
-/* Navigation bar dynamic hide/show */
-  .navbar.collapsed {
-	padding: 0;
-	display: flex;
-	align-items: center;}
-
-.navbar.collapsed ul {
-	display: none;
-	/* Hide the menu items when collapsed */}
-
-.navbar.collapsed::after {
-	content: attr(data-current-section);
-	color: rgb(255, 255, 255);
-	margin: 0 auto;}
-
-/* You may also want to add styles for hover effects and other interactions */
-  .navbar.collapsed:hover::after {
-	color: #b4b2b2;
-	/* Darker color on hover, adjust as needed */}
 
 /* Link styles */
   .navbar li a {
@@ -145,6 +126,7 @@ body, html {
 	.navbar.navbar-expand-lg {
 	top: 0;
 	left: 0;
+	padding: 50px;
 	transform: none;
 	width: 100%;
 	justify-content: space-around;}
@@ -157,6 +139,13 @@ body, html {
 	overflow-x: auto;
 	overflow-y: hidden;
 	height: calc(100% - 50px);}
+
+	/* Hide scrollbar by default */
+	.side-scroll::-webkit-scrollbar {
+		display: none;
+  }
+
+
 
 /* Section styles */
   .section {
@@ -172,8 +161,8 @@ body, html {
 	/* Styles for sections */
 
 .section-2, .section-3, .section-4 {
-    position: relative; /* Needed for absolute positioning of child elements */
-    padding: 20px;
+	position: relative; /* Needed for absolute positioning of child elements */
+	padding: 20px;
 	display: inline-block;
 	width: 2200px;
 	height: 100%;
@@ -188,7 +177,7 @@ body, html {
 
 .container-fluid {
 	position: relative;
-    min-height: 200px; /* Adjust this value based on the height of your navbar */
+	min-height: 200px; /* Adjust this value based on the height of your navbar */
 }
 
 
@@ -216,22 +205,22 @@ body, html {
 .circle-text span {
 	display: block;
 	/* This will stack the words vertically */
-    transition: background-color 0.3s ease;}
+	transition: background-color 0.3s ease;}
 
 /* Upper left corner styling */
 .upper-left h2 {
-    position: absolute;
-    top: 125px;
-    left: 20px;
+	position: absolute;
+	top: 125px;
+	left: 20px;
 	font-size: 50px;
 	line-height: 2.0; /* Adjust line spacing */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 .upper-left p {
-    position: absolute;
-    top: 225px;
-    left: 20px;
+	position: absolute;
+	top: 225px;
+	left: 20px;
 	font-size: 18px;
 	line-height: 2.0; /* Adjust line spacing */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
@@ -239,30 +228,30 @@ body, html {
 
 /* Lower right corner styling */
 .lower-right {
-    position: absolute;
-    bottom: 250px;
-    right: 0px;
+	position: absolute;
+	bottom: 250px;
+	right: 0px;
 	left: 1300px;
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Title and paragraph specific styles */
 .display-4, h2, .lead, p {
-    margin: 0;
-    padding: 5px;
-    color: #ffffff; /* Adjust text color as needed */
+	margin: 0;
+	padding: 5px;
+	color: #ffffff; /* Adjust text color as needed */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Additional styling for titles */
 .display-4, h2 {
-    font-size: 1.5rem; /* Adjust title size as needed */
+	font-size: 1.5rem; /* Adjust title size as needed */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Additional styling for paragraphs */
 .lead, p {
-    font-size: 1rem; /* Adjust paragraph size as needed */
+	font-size: 1rem; /* Adjust paragraph size as needed */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
@@ -272,7 +261,7 @@ body, html {
 	#Exhibit-A {
 		background: none;
 	  }
-	
+
 	.image-container-1 img{
 		max-width: 100%;
 		width: auto;
@@ -282,7 +271,7 @@ body, html {
 	}
 
 	.image-container-2 {
-        position: absolute;
+		position: absolute;
 		top: 0;
 		left: 0;
 		z-index: 1;
@@ -294,7 +283,7 @@ body, html {
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
 	}
-   
+
 	  #Exhibit-B {
 		background: none;
 	  }
@@ -326,7 +315,7 @@ body, html {
 		padding-top: 300px;
 		padding-left: 500px;;
 	}
-	
+
 	.text-container {
 		position: absolute; /* Position relative to .section-2 */
 		width: 40%; /* Set a width for the container */
@@ -336,7 +325,7 @@ body, html {
 		color: #ffffff;
 		text-align: left;
 	}
-	
+
 	.lead {
 		/* Text-specific styles */
 		margin: 0; /* Remove default margins */
@@ -344,33 +333,22 @@ body, html {
 		word-wrap: break-word;
 		/* Add other text styles as needed */
 	}
-		
 
-.title-hidden {
-	display: none;}
 
-/* This targets any section that is not Home and hides the h1 and h2 within it */
-  .section:not(#Home) .section-title,
-  .section:not(#Home) .section-description {
-	display: none;
-	position: absolute;
-	top: 50%;
-	/* Adjust as needed */
-    left: 50%;
-	/* Adjust as needed */
-    transform: translate(-50%, -50%);
-	z-index: 10;}
+
+
+
 
 /* Section Content */
   .section-title {
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 2%;
 	transform: translateY(-50%);
 	color: white;
 	font-size: 10em;
 	/* Increase the font size */
-    line-height: 1.0;
+	line-height: 1.0;
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
 	transition: background-color 0.3s ease;
@@ -380,7 +358,7 @@ body, html {
 .section-title span {
 	display: block;
 	/* This will stack the words vertically */
-    transition: background-color 0.3s ease;}
+	transition: background-color 0.3s ease;}
 
 .section-description {
 	position: absolute;
@@ -389,14 +367,14 @@ body, html {
 	transform: translateY(-50%);
 	color: white;
 	font-size: 1.5em;
-    line-height: 1.2;
+	line-height: 1.2;
 	text-align: left;
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Override for the text block to allow normal wrapping */
 .side-scroll .upper-left, .lower-right{
-    white-space: normal;
+	white-space: normal;
 }
 
 
@@ -405,30 +383,30 @@ h2.display-4 {
 	text-shadow: 2px 2px 3px black;
 	margin-bottom: 20px; /* Spacing after the title */
 }
-	
+
 p.lead {
 	font-size: 1rem; /* Larger font size for the paragraph */
 	font-weight: 300; /* Lighter font weight for the paragraph */
-}	
-	
+}
+
 
 /* Style for the purple oval buttons */
   .cta-button {
 	background-color: #A020F0;
 	/* Purple color */
-    color: white;
+	color: white;
 	border: none;
 	padding: 10px 20px;
 	border-radius: 20px;
 	/* Gives the oval shape */
-    font-size: 1rem;
+	font-size: 1rem;
 	cursor: pointer;
 	text-decoration: none;
 	/* Remove underline from links */
-    display: inline-block;
+	display: inline-block;
 	margin: 0 5px;
 	/* Spacing between buttons if necessary */
-    transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 	/* Smooth background color change */}
 
 /* Hover effect for the button */
@@ -436,72 +414,72 @@ p.lead {
 	background-color: #7f1ae5;
 	/* Slightly darker purple on hover */}
 
-.cta-button-header {
-	background-color: #A020F0;
-	/* Purple color */
-    color: white;
-	position: absolute;
-	top: 83%;
-	left: 1.8%;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	/* Gives the oval shape */
-    font-size: 2rem;
-	cursor: pointer;
-	text-decoration: none;
-	/* Remove underline from links */
-    display: inline-block;
-	margin: 0 5px;
-	/* Spacing between buttons if necessary */
-    transition: background-color 0.3s ease;
-	/* Smooth background color change */}
+	.cta-button-header {
+		background-color: #A020F0;
+		/* Purple color */
+		color: white;
+		position: absolute;
+		top: 83%;
+		left: 1.8%;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 50px;
+		/* Gives the oval shape */
+		font-size: 2rem;
+		cursor: pointer;
+		text-decoration: none;
+		/* Remove underline from links */
+		display: inline-block;
+		margin: 0 5px;
+		/* Spacing between buttons if necessary */
+		transition: background-color 0.3s ease;
+		/* Smooth background color change */}
 
 /* Hover effect for the button */
-  .cta-button-header:hover {
-	background-color: #7f1ae5;
-	/* Slightly darker purple on hover */}
+	.cta-button-header:hover {
+		background-color: #7f1ae5;
+		/* Slightly darker purple on hover */}
 
 /* Possibilities arrow */
-.explore-next-section {
-	position: fixed; /* This ensures the element is fixed relative to the viewport */
-	bottom: 20px; /* Adjust this value as needed to place it from the bottom */
-	right: 20px; /* Adjust this value as needed to place it from the right */
-	font-size: 2em; /* Adjust font size as needed */
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	color: white;
-	z-index: 10; /* Make sure it's above other elements */
-	text-shadow: 2px 2px 3px black;
-  }
+	.explore-next-section {
+		position: fixed; /* This ensures the element is fixed relative to the viewport */
+		bottom: 0px; /* Adjust this value as needed to place it from the bottom */
+		right: 10px; /* Adjust this value as needed to place it from the right */
+		font-size: 2em; /* Adjust font size as needed */
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		color: white;
+		z-index: 10; /* Make sure it's above other elements */
+		text-shadow: 2px 2px 3px black;
+	}
 
-.explore-next-section:hover {
-	color: #7f1ae5;}
+	.explore-next-section:hover {
+		color: #7f1ae5;}
 
-.next-section-arrow {
-	font-size: 2em;
-	/* Adjust as needed */
-    transition: transform 0.3s ease;
-	color: white;
-	text-decoration: none;
-	min-width: 100px;}
+	.next-section-arrow {
+		font-size: 2em;
+		/* Adjust as needed */
+		transition: transform 0.3s ease;
+		color: white;
+		text-decoration: none;
+		min-width: 100px;}
 
-.next-section-arrow:hover {
-	transform: translateX(5px);
-	/* Arrow moves to the right on hover */}
+	.next-section-arrow:hover {
+		transform: translateX(5px);
+		/* Arrow moves to the right on hover */}
 
-.moving-image {
-	animation: moveAround 10s infinite;
-	position: absolute; /* or 'fixed' depending on your layout */
-	top: 10px; /* adjust as needed to place above the navbar */
-	left: 50%; /* centers the image horizontally */
-	transform: translateX(-50%) scale(0.3); /* adjust scale value to resize */
-	z-index: 1000; /* ensure it's above other elements */
-}
+	.moving-image {
+		animation: moveAround 10s infinite;
+		position: absolute; /* or 'fixed' depending on your layout */
+		top: 10px; /* adjust as needed to place above the navbar */
+		left: 50%; /* centers the image horizontally */
+		transform: translateX(-50%) scale(0.3); /* adjust scale value to resize */
+		z-index: 1000; /* ensure it's above other elements */
+	}
 
-  
+
   @keyframes moveAround {
 	0% { top: 0; left: 0; }
 	25% { top: 0; left: 120%; }
@@ -514,4 +492,68 @@ p.lead {
 	display: block; /* removes bottom space/line */
 	max-width: 100%; /* ensures image is responsive */
 	height: auto; /* maintains aspect ratio */
+  }
+
+
+
+/* Mobile and Tablet styling */
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+	.section-title {
+	  font-size: 5em; /* Smaller font size for mobile */
+	  left: 2%; /* Adjust positioning for smaller screens */
+	  top: 55%; /* Adjust vertical position */
+	}
+  
+	.section-description {
+	  font-size: 1em; /* Smaller font size for mobile */
+	  top: 70%; /* Adjust vertical position */
+	  left: 2%; /* Adjust positioning for smaller screens */
+	}
+
+	.cta-button, .cta-button-header {
+		font-size: 0.8rem; /* Smaller font size for mobile */
+		padding: 8px 16px; /* Adjust padding for mobile */
+	  }
+	
+	  .explore-next-section {
+		font-size: 1.5em; /* Adjust font size as needed for mobile */
+		bottom: 10px; /* Adjust bottom position for mobile */
+		right: 10px; /* Adjust right position for mobile */
+	  }
+	
+	  .next-section-arrow {
+		font-size: 1.5em; /* Adjust arrow size as needed for mobile */
+	}
+  }
+  
+  /* Tablet devices */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.section-title {
+	  font-size: 7em; /* Larger font size for tablet */
+	  left: 2%; /* Adjust positioning for medium screens */
+	  top: 40%; /* Adjust vertical position */
+	}
+  
+	.section-description {
+	  font-size: 1.2em; /* Larger font size for tablet */
+	  top: 60%; /* Adjust vertical position */
+	  left: 2%; /* Adjust positioning for medium screens */
+	}
+
+	.cta-button, .cta-button-header {
+		font-size: 0.9rem; /* Adjust font size for tablet */
+		padding: 9px 18px; /* Adjust padding for tablet */
+	}
+	
+	.explore-next-section {
+		font-size: 1.75em; /* Adjust font size as needed for tablet */
+		bottom: 20px; /* Adjust bottom position for tablet */
+		right: 15px; /* Adjust right position for tablet */
+	}
+	
+	.next-section-arrow {
+		font-size: 1.75em; /* Adjust arrow size as needed for tablet */
+	}
   }
