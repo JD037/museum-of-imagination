@@ -6,6 +6,7 @@ document.querySelector(".side-scroll").addEventListener("wheel", function(e) {
   }
 }, { passive: false });
 
+// Enables next section arrow
 document.querySelector('.next-section-arrow').addEventListener('click', function(e) {
   e.preventDefault();
   const sideScroll = document.querySelector(".side-scroll");
