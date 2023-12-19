@@ -159,7 +159,7 @@ body, html {
 /* Section styles */
   .section {
 	display: inline-block;
-	width: 2000px;
+	width: 3000px;
 	height: 100%;
 	padding: 20px;
 	/* box-sizing: border-box; */
@@ -173,7 +173,7 @@ body, html {
     position: relative; /* Needed for absolute positioning of child elements */
     padding: 20px;
 	display: inline-block;
-	width: 2000px;
+	width: 2200px;
 	height: 100%;
 	padding: 20px;
 	/* box-sizing: border-box; */
@@ -217,17 +217,31 @@ body, html {
     transition: background-color 0.3s ease;}
 
 /* Upper left corner styling */
-.upper-left {
+.upper-left h2 {
     position: absolute;
-    top: 150px;
-    left: 50px;
+    top: 125px;
+    left: 20px;
+	font-size: 50px;
+	line-height: 2.0; /* Adjust line spacing */
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
+}
+
+.upper-left p {
+    position: absolute;
+    top: 225px;
+    left: 20px;
+	font-size: 18px;
+	line-height: 2.0; /* Adjust line spacing */
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Lower right corner styling */
 .lower-right {
-    position: fixed;
+    position: absolute;
     bottom: 250px;
-    right: 50px;
+    right: 0px;
+	left: 1300px;
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Title and paragraph specific styles */
@@ -235,16 +249,19 @@ body, html {
     margin: 0;
     padding: 5px;
     color: #ffffff; /* Adjust text color as needed */
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Additional styling for titles */
 .display-4, h2 {
     font-size: 1.5rem; /* Adjust title size as needed */
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 /* Additional styling for paragraphs */
 .lead, p {
     font-size: 1rem; /* Adjust paragraph size as needed */
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
 
@@ -254,19 +271,33 @@ body, html {
 		background: none;
 	  }
 	
-	.image-container img{
+	.image-container-1 img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
 		padding-top: 300px;
-		padding-left: 500px;;
+		padding-left: 300px;;
+	}
+
+	.image-container-2 {
+        position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		padding-left: 1400px;
+		padding-top: 300px;
+	}
+	.image-container-2 img{
+		max-width: 100%;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
 	}
    
 	  #Exhibit-B {
 		background: none;
 	  }
 
-	  .image-container-2 img{
+	  .image-container-3 img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
@@ -278,7 +309,15 @@ body, html {
 		background: none;
 	  }
 
-	  .image-container-3 img{
+	  .image-container-4 img{
+		max-width: 100%;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
+		padding-top: 300px;
+		padding-left: 500px;;
+	}
+
+	.image-container-5 img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
@@ -327,12 +366,14 @@ body, html {
 	left: 2%;
 	transform: translateY(-50%);
 	color: white;
-	font-size: 7em;
+	font-size: 10em;
 	/* Increase the font size */
-    line-height: 1.2;
+    line-height: 1.0;
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
-	transition: background-color 0.3s ease;}
+	transition: background-color 0.3s ease;
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
+}
 
 .section-title span {
 	display: block;
@@ -347,7 +388,9 @@ body, html {
 	color: white;
 	font-size: 1.5em;
     line-height: 1.2;
-	text-align: left;}
+	text-align: left;
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */
+}
 
 /* Override for the text block to allow normal wrapping */
 .side-scroll .upper-left, .lower-right{
