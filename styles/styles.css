@@ -182,7 +182,23 @@ body, html {
 .circle-text span {
 	display: block;
 	/* This will stack the words vertically */
-    transition: background-color 0.3s ease;}
+    transition: background-color 0.3s ease;
+}
+
+@keyframes moveLeft {
+    from {
+        right: -100px; /* Start off-screen to the right */
+    }
+    to {
+        right: 100%; /* Move to the left */
+    }
+}
+
+/* If you need additional styling for the text */
+.circle span {
+    position: relative; /* Adjust based on your design */
+}
+
 
 /* Upper left corner styling */
 .upper-left h2 {
@@ -272,6 +288,21 @@ body, html {
 		padding-top: 300px;
 	}
 	.image-container-2 img{
+		max-width: 100%;
+		padding-top: 20px;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
+	}
+
+	.image-container-6 {
+		max-width: 100%;
+        padding-top: 20px;
+		padding-bottom: 200px;
+		width: auto;
+		height: auto; /* Maintain aspect ratio */
+	}
+
+	.image-container-6 img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
