@@ -501,19 +501,19 @@ p.lead {
 /* Mobile devices */
 @media only screen and (max-width: 768px) {
 	.section-title {
-	  font-size: 5em; /* Smaller font size for mobile */
+	  font-size: 7em; /* Smaller font size for mobile */
 	  left: 2%; /* Adjust positioning for smaller screens */
-	  top: 55%; /* Adjust vertical position */
+	  top: 50%; /* Adjust vertical position */
 	}
   
 	.section-description {
-	  font-size: 1em; /* Smaller font size for mobile */
+	  font-size: 1.5em; /* Smaller font size for mobile */
 	  top: 70%; /* Adjust vertical position */
 	  left: 2%; /* Adjust positioning for smaller screens */
 	}
 
 	.cta-button, .cta-button-header {
-		font-size: 0.8rem; /* Smaller font size for mobile */
+		font-size: 1rem; /* Smaller font size for mobile */
 		padding: 8px 16px; /* Adjust padding for mobile */
 	  }
 	
@@ -524,27 +524,28 @@ p.lead {
 	  }
 	
 	  .next-section-arrow {
-		font-size: 1.5em; /* Adjust arrow size as needed for mobile */
+		font-size: 2em; /* Adjust arrow size as needed for mobile */
 	}
   }
   
   /* Tablet devices */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.section-title {
-	  font-size: 7em; /* Larger font size for tablet */
+	  font-size: 10em; /* Larger font size for tablet */
 	  left: 2%; /* Adjust positioning for medium screens */
 	  top: 40%; /* Adjust vertical position */
 	}
   
 	.section-description {
-	  font-size: 1.2em; /* Larger font size for tablet */
-	  top: 60%; /* Adjust vertical position */
+	  font-size: 2em; /* Larger font size for tablet */
+	  top: 65%; /* Adjust vertical position */
 	  left: 2%; /* Adjust positioning for medium screens */
 	}
 
 	.cta-button, .cta-button-header {
 		font-size: 0.9rem; /* Adjust font size for tablet */
 		padding: 9px 18px; /* Adjust padding for tablet */
+		align-items: center;
 	}
 	
 	.explore-next-section {
