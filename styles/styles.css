@@ -418,19 +418,18 @@ p.lead {
 	/* Slightly darker purple on hover */}
 
 /* Possibilities arrow */
-  .explore-next-section {
-	position: relative;
-	/* Adjust as needed */
-    top: 91.5%;
-	left: 48%;
-	font-size: 2em;
-	/* Adjust as needed */
-    cursor: pointer;
+.explore-next-section {
+	position: fixed; /* This ensures the element is fixed relative to the viewport */
+	bottom: 20px; /* Adjust this value as needed to place it from the bottom */
+	right: 20px; /* Adjust this value as needed to place it from the right */
+	font-size: 2em; /* Adjust font size as needed */
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	/* Space between text and arrow */
-    color: white;}
+	color: white;
+	z-index: 10; /* Make sure it's above other elements */
+  }
 
 .explore-next-section:hover {
 	color: #7f1ae5;}
