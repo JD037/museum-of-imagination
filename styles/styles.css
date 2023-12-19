@@ -39,7 +39,9 @@ body, html {
     position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1000;}
+	z-index: 1000;
+	text-shadow: 2px 2px 3px black;
+}
 
 /* Style the dropdown button */
   .dropbtn {
@@ -400,7 +402,7 @@ body, html {
 
 h2.display-4 {
 	font-size: 1.5rem;
-	
+	text-shadow: 2px 2px 3px black;
 	margin-bottom: 20px; /* Spacing after the title */
 }
 	
@@ -472,6 +474,7 @@ p.lead {
 	gap: 20px;
 	color: white;
 	z-index: 10; /* Make sure it's above other elements */
+	text-shadow: 2px 2px 3px black;
   }
 
 .explore-next-section:hover {
