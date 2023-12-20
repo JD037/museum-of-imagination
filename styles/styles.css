@@ -26,7 +26,7 @@ body, html {
 	
 
 /* Navbar styles */
-  .navbar.navbar-expand-lg {
+.navbar.navbar-expand-lg {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
@@ -39,17 +39,17 @@ body, html {
 	z-index: 1000;}
 
 /* Style the dropdown button */
-  .dropbtn {
+.dropbtn {
 	border-radius: 50px;}
 
 /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+.dropdown {
 	position: relative;
 	display: inline-block;
 	border-radius: 50px;}
 
 /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
 	display: none;
 	top: 100%;
 	left: 0;
@@ -59,7 +59,7 @@ body, html {
 	z-index: 1;}
 
 /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
@@ -68,20 +68,20 @@ body, html {
 	text-align: left;}
 
 /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
 	border-radius: 50px;}
 
 /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
 	display: block;
 	border-radius: 50px;}
 
 /* Show the dropdown button with a background color on hover */
-  .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
 	background-color: #A020F0;}
 
 /* Style for the logo image */
-  .logo img {
+.logo img {
 	max-height: 70px;
     max-width: 200px;
 }
@@ -100,11 +100,11 @@ body, html {
 	margin-right: 10px;}
 
 /* Adjusts the last nav item to remove extra margin */
-  .navbar li:last-child {
+.navbar li:last-child {
 	margin-right: 0;}
 
 /* Link styles */
-  .navbar li a {
+.navbar li a {
 	color: rgb(248, 248, 248);
 	padding: 14px 16px;
 	text-decoration: none;
@@ -112,22 +112,28 @@ body, html {
 }
 
 /* Hover effect for links */
-  .navbar li a:hover {
+.navbar li a:hover {
 	color: #b1adad;}
 
 
 
 /* Styles for the side-scrolling sections */
-  .side-scroll {
+.side-scroll {
 	white-space: nowrap;
 	overflow-x: auto;
 	overflow-y: hidden;
 	height: calc(100% - 50px);}
+	
+/* Override for the text block to allow normal wrapping */
+.side-scroll .float-cities, .inverted-arch, .mirror-city {
+    white-space: normal;
+}
+
 
 /* Section styles */
-  .section {
+.section {
 	display: inline-block;
-	width: 3000px;
+	width: 2000px;
 	height: 100%;
 	padding: 20px;
 	/* box-sizing: border-box; */
@@ -186,7 +192,7 @@ body, html {
 }
 
 /* Upper left corner styling */
-.upper-left h2 {
+.float-cities h2 {
     position: absolute;
     top: 125px;
     left: -10px;
@@ -195,7 +201,7 @@ body, html {
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
-.upper-left p {
+.float-cities p {
     position: absolute;
     top: 225px;
     left: -10px;
@@ -205,13 +211,19 @@ body, html {
 }
 
 /* Lower right corner styling */
-.lower-right {
+.mirror-city {
     position: absolute;
     bottom: 250px;
     right: 0px;
 	left: 1300px;
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
+.inverted-arch {
+	position: absolute;
+    bottom: 250px;
+    right: 0px;
+	left: 2%;
+	text-shadow: 2px 2px 3px black; /* Add drop shadow */}
 
 /* Title and paragraph specific styles */
 .display-4, h2, .lead, p {
@@ -236,9 +248,9 @@ body, html {
 
 /* Exihibition Sections */
 
-	#Exhibit-A {
-		background: none;
-	  }
+#Exhibit-A {
+	background: none;
+}
 	
 .image-container-1 {
 	position: absolute;
@@ -247,124 +259,124 @@ body, html {
 	z-index: 1;
 }
 
-	.image-container-1 img{
-		max-width: 100%;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
-		padding-top: 300px;
-		padding-left: 300px;
-		padding-bottom: 100px;
-	}
+.image-container-1 img{
+	max-width: 100%;
+	width: auto;
+	height: auto; /* Maintain aspect ratio */
+	padding-top: 300px;
+	padding-left: 300px;
+	padding-bottom: 100px;
+}
 
-	@keyframes slideImage {
-		0% {
-			transform: translate(0, 10%); /* Start at the original position */
-		}
-		50% {
-			transform: translate(-25%, 25%); /* Move to the left and down */
-		}
-		100% {
-			transform: translate(0, 10%); /* Return to the original position */
-		}
+@keyframes slideImage {
+	0% {
+		transform: translate(0, 10%); /* Start at the original position */
 	}
+	50% {
+		transform: translate(-25%, 25%); /* Move to the left and down */
+	}
+	100% {
+		transform: translate(0, 10%); /* Return to the original position */
+	}
+}
 	
-	.animated-image {
-		animation: slideImage 45s ease-in-out infinite; /* Adjust the timing as needed */
-	}
+.animated-image {
+	animation: slideImage 45s ease-in-out infinite; /* Adjust the timing as needed */
+}
 	
-	.image-container-2 {
-        position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		padding-left: 1400px;
-		padding-top: 300px;
-	}
-	.image-container-2 img{
-		max-width: 100%;
-		padding-top: 20px;
-		width: 100%;
-		height: 100%; /* Maintain aspect ratio */
-	}
+.image-container-2 {
+    position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding-left: 1400px;
+	padding-top: 300px;
+}
+.image-container-2 img{
+	max-width: 100%;
+	padding-top: 20px;
+	width: 100%;
+	height: 100%; /* Maintain aspect ratio */
+}
 
-	.image-container-6 {
-		max-width: 100%;
-		padding-left: 500px;
-        padding-top: 20px;
-		padding-bottom: 0px;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
-	}
+.image-container-6 {
+	max-width: 100%;
+	padding-left: 500px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	width: auto;
+	height: auto; /* Maintain aspect ratio */
+}
 
-	.image-container-6 img{
-		max-width: 100%;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
-	}
+.image-container-6 img{
+	max-width: 100%;
+	width: auto;
+	height: auto; /* Maintain aspect ratio */
+}
    
-	  #Exhibit-B {
-		background: none;
-	  }
+#Exhibit-B {
+	background: none;
+}
 
 .image-container-3 {
 	position: absolute;
-	top: 0;
+	top: 15%;
 	right: 0;
 	z-index: 1;
 }
 
-	  .image-container-3 img{
-		max-width: 100%;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
-		padding-top: 300px;
-		padding-left: 400px;;
-	}
+.image-container-3 img{
+	max-width: 100%;
+	width: auto;
+	height: auto; /* Maintain aspect ratio */
+	padding-top: 300px;
+	padding-left: 400px;;
+}
 
-	  #Exhibit-C {
-		background: none;
-	  }
+#Exhibit-C {
+	background: none;
+}
 
-	  .image-container-4 img{
-		max-width: 100%;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
-		padding-top: 300px;
-		padding-left: 500px;;
-	}
+.image-container-4 img{
+	max-width: 100%;
+	width: auto;
+	height: auto; /* Maintain aspect ratio */
+	padding-top: 300px;
+	padding-left: 500px;;
+}
 
-	.image-container-5 img{
-		max-width: 100%;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
-		padding-top: 300px;
-		padding-left: 500px;;
-	}
+.image-container-5 img{
+	max-width: 100%;
+	width: auto;
+	height: auto; /* Maintain aspect ratio */
+	padding-top: 300px;
+	padding-left: 500px;;
+}
 	
-	.text-container {
-		position: absolute; /* Position relative to .section-2 */
-		width: 40%;
-		background: none;
-		padding: 0px;
-		color: #ffffff;
-		text-align: left;
-	}
+.text-container {
+	position: absolute; /* Position relative to .section-2 */
+	width: 40%;
+	background: none;
+	padding: 0px;
+	color: #ffffff;
+	text-align: left;
+}
 	
-	.lead {
-		/* Text-specific styles */
-		margin: 0;
-		padding: 10px 0;
-		word-wrap: break-word;}
+.lead {
+	/* Text-specific styles */
+	margin: 0;
+	padding: 10px 0;
+	word-wrap: break-word;}
 
 /* Section Content */
-  .section-title {
+.section-title {
 	position: absolute;
 	top: 50%;
 	left: 2%;
 	transform: translateY(-50%);
 	color: white;
 	font-size: 10em;
-    line-height: 1.0;
+	line-height: 1.0;
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
 	transition: background-color 0.3s ease;
@@ -387,11 +399,6 @@ body, html {
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 
-/* Override for the text block to allow normal wrapping */
-.side-scroll .upper-left, .lower-right{
-    white-space: normal;
-}
-
 
 h2.display-4 {
 	font-size: 1.5rem;
@@ -405,7 +412,7 @@ p.lead {
 	
 
 /* Style for the purple oval buttons */
-  .cta-button {
+.cta-button {
 	background-color: #A020F0;
     color: white;
 	border: none;
@@ -419,7 +426,7 @@ p.lead {
     transition: background-color 0.3s ease;}
 
 /* Hover effect for the button */
-  .cta-button:hover {
+.cta-button:hover {
 	background-color: #7f1ae5;}
 
 .cta-button-header {
@@ -441,7 +448,7 @@ p.lead {
 	}
 
 /* Hover effect for the button */
-  .cta-button-header:hover {
+.cta-button-header:hover {
 	background-color: #7f1ae5;}
 
 /* Possibilities arrow */
@@ -471,15 +478,17 @@ p.lead {
 .next-section-arrow:hover {
 	transform: translateX(5px);}
 
+
+/* Flying Car */
 .moving-image {
-	animation: moveAround 5s infinite;
+	animation: moveAround 10s infinite;
 	position: absolute;
 	top: 10px;
 	left: 50%;
 	transform: translateX(-50%) scale(0.3);
 	z-index: 1000; }
 
-  @keyframes moveAround {
+@keyframes moveAround {
 	0% { top: 0; left: 0; }
 	25% { top: 0; left: 120%; }
 	50% { top: 100%; left: 120%; }
@@ -499,23 +508,23 @@ p.lead {
 /* Hide scrollbar for Webkit browsers */
 .side-scroll::-webkit-scrollbar {
 	display: none; /* This will hide the scrollbar completely */
-  }
+}
 /* Hide scrollbar by default */
 .side-scroll::-webkit-scrollbar {
 	display: none;
-  }
+}
 /* Show scrollbar on hover */
 .side-scroll:hover::-webkit-scrollbar {
 	display: block;
-  }
+}
 /* Hide scrollbar for Firefox */
 .side-scroll {
 	scrollbar-width: none;  /* Firefox */
-  }
+}
 /* Hide scrollbar for IE and Edge */
 .side-scroll {
 	-ms-overflow-style: none;  /* Internet Explorer and Edge */
-  }
+}
   
 /* Mobile and Tablet Styling */
 /* Mobile */
@@ -531,30 +540,30 @@ p.lead {
 	font-size: 5em; /* Smaller font size for mobile */
 	left: 5%; /* Adjust positioning for smaller screens */
 	top: 30%; /* Adjust vertical position */
-	}
+}
   
 .section-description {
 	font-size: 1em; /* Smaller font size for mobile */
 	top: 50%; /* Adjust vertical position */
 	left: 5%; /* Adjust positioning for smaller screens */
-	}
+}
 	
 .cta-button, .cta-button-header {
     font-size: 0.8rem; /* Smaller font size for mobile */
     padding: 8px 16px; /* Adjust padding for mobile */
 	left: 7%;
 	top: 70%;
-  }
+}
 
-  .explore-next-section {
+.explore-next-section {
     font-size: 1.5em; /* Adjust font size as needed for mobile */
     bottom: 10px; /* Adjust bottom position for mobile */
     right: 10px; /* Adjust right position for mobile */
-  }
+}
 
-  .next-section-arrow {
+.next-section-arrow {
     font-size: 1.5em; /* Adjust arrow size as needed for mobile */
-  }
+}
 }
 
 /* Tablet */
