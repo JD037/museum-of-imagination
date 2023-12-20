@@ -141,16 +141,40 @@ body, html {
 	position: relative;
 	overflow: hidden;}
 
-	/* Styles for sections */
-
-.section-2, .section-3, .section-4 {
-    position: relative; /* Needed for absolute positioning of child elements */
-    padding: 20px;
+	
+/* Styles for sections */
+.section-2 {
+	position: relative; /* Needed for absolute positioning of child elements */
+	padding: 20px;
 	display: inline-block;
 	width: 2200px;
 	height: 100%;
 	padding: 20px;
 	/* box-sizing: border-box; */
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+}
+	
+.section-3 {
+	position: relative;
+	padding: 20px;
+	display: inline-block;
+	width: 2200px;
+	height: 100%;
+	padding: 20px;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+}
+	
+.section-4 {
+	position: relative; 
+	padding: 20px;
+	display: inline-block;
+	width: 2000px;
+	height: 100%;
+	padding: 20px;
 	vertical-align: top;
 	position: relative;
 	overflow: hidden;
@@ -214,13 +238,13 @@ body, html {
 .mirror-city {
     position: absolute;
     bottom: 250px;
-    right: 0px;
-	left: 1300px;
+    top: 70%;
+	left: 35%;
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
 }
 .inverted-arch {
 	position: absolute;
-    bottom: 250px;
+    bottom: 150px;
     right: 0px;
 	left: 2%;
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */}
@@ -287,16 +311,16 @@ body, html {
 .image-container-2 {
     position: absolute;
 	top: 0;
-	left: 0;
+	left: 20%;
+	
 	z-index: 1;
-	padding-left: 1400px;
-	padding-top: 300px;
 }
 .image-container-2 img{
-	max-width: 100%;
-	padding-top: 20px;
-	width: 100%;
-	height: 100%; /* Maintain aspect ratio */
+	top: 0;
+	padding-top: 50px;
+	padding-left: 300px;
+	padding-bottom: 100px;
+	left: 55%; /* Maintain aspect ratio */
 }
 
 .image-container-6 {
@@ -320,8 +344,7 @@ body, html {
 
 .image-container-3 {
 	position: absolute;
-	top: 15%;
-	right: 0;
+	top: 30%;
 	z-index: 1;
 }
 
@@ -329,8 +352,7 @@ body, html {
 	max-width: 100%;
 	width: auto;
 	height: auto; /* Maintain aspect ratio */
-	padding-top: 300px;
-	padding-left: 400px;;
+	left: 3%;
 }
 
 #Exhibit-C {
