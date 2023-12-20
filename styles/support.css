@@ -20,7 +20,7 @@ body {
 /******************************************/
 /******   SUPPORT Hero SECTION  *******/
 .supportSection {
-  background: url("./images/image2.jpg") no-repeat center center;
+  background: url("../images/image2.jpg") no-repeat center center;
   background-size: cover;
   color: #543bdf;
   text-align: center; }
