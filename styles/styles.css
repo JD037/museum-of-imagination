@@ -185,26 +185,11 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-@keyframes moveLeft {
-    from {
-        right: -100px; /* Start off-screen to the right */
-    }
-    to {
-        right: 100%; /* Move to the left */
-    }
-}
-
-/* If you need additional styling for the text */
-.circle span {
-    position: relative; /* Adjust based on your design */
-}
-
-
 /* Upper left corner styling */
 .upper-left h2 {
     position: absolute;
     top: 125px;
-    left: 20px;
+    left: -10px;
 	font-size: 50px;
 	line-height: 2.0; /* Adjust line spacing */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
@@ -213,7 +198,7 @@ body, html {
 .upper-left p {
     position: absolute;
     top: 225px;
-    left: 20px;
+    left: -10px;
 	font-size: 18px;
 	line-height: 2.0; /* Adjust line spacing */
 	text-shadow: 2px 2px 3px black; /* Add drop shadow */
@@ -255,28 +240,36 @@ body, html {
 		background: none;
 	  }
 	
+.image-container-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
 	.image-container-1 img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
 		padding-top: 300px;
-		padding-left: 300px;;
+		padding-left: 300px;
+		padding-bottom: 100px;
 	}
 
 	@keyframes slideImage {
 		0% {
-			transform: translate(0, 0); /* Start at the original position */
+			transform: translate(0, 10%); /* Start at the original position */
 		}
 		50% {
 			transform: translate(-25%, 25%); /* Move to the left and down */
 		}
 		100% {
-			transform: translate(0, 0); /* Return to the original position */
+			transform: translate(0, 10%); /* Return to the original position */
 		}
 	}
 	
 	.animated-image {
-		animation: slideImage 30s ease-in-out infinite; /* Adjust the timing as needed */
+		animation: slideImage 45s ease-in-out infinite; /* Adjust the timing as needed */
 	}
 	
 	.image-container-2 {
@@ -290,14 +283,15 @@ body, html {
 	.image-container-2 img{
 		max-width: 100%;
 		padding-top: 20px;
-		width: auto;
-		height: auto; /* Maintain aspect ratio */
+		width: 100%;
+		height: 100%; /* Maintain aspect ratio */
 	}
 
 	.image-container-6 {
 		max-width: 100%;
+		padding-left: 500px;
         padding-top: 20px;
-		padding-bottom: 200px;
+		padding-bottom: 0px;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
 	}
@@ -312,12 +306,19 @@ body, html {
 		background: none;
 	  }
 
+.image-container-3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
 	  .image-container-3 img{
 		max-width: 100%;
 		width: auto;
 		height: auto; /* Maintain aspect ratio */
 		padding-top: 300px;
-		padding-left: 500px;;
+		padding-left: 400px;;
 	}
 
 	  #Exhibit-C {

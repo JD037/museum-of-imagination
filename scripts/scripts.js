@@ -15,3 +15,4 @@ document.querySelector('.next-section-arrow').addEventListener('click', function
   // Scroll to the next section
   sideScroll.scrollLeft += sectionWidth;
 });
+
