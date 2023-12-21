@@ -20,12 +20,12 @@
 }
 
 body {
-  background: rgb(154, 226, 244);
+  background: rgb(255, 255, 255);
   margin: 0;
 }
 
 header {
-  background-image: url("../images/city-bkg.jpg");
+  background-image: url("../images/MOI_img_5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -39,14 +39,14 @@ header a:hover {
 
 .logo {
   width: auto;
-  height: 30px;
+  height: 100px;
 }
 
 /* Change the background color of the navbar to black */
 .navbar {
   background-color: black;
   /* You can also specify the text color if needed */
-  color: white; /* White text on a black background */
+  color: rgb(0, 0, 0); /* White text on a black background */
 }
 
 /* Optional: You can add additional styles to the navbar-brand if needed */
@@ -98,7 +98,7 @@ header a:hover {
   font-family: 'Kalnia'!important;
   font-weight: 400;
   font-weight: bold;
-  color: rgb(47, 224, 255);
+  color: rgb(0, 0, 0);
 }
 
 /************* TABLE & MOBILE VERSION -************/ 
