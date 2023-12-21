@@ -19,6 +19,7 @@
     
     <!-- CSS Styling & scripts -->
     <link rel="stylesheet" href="../styles/styles2.css">
+    <link rel="stylesheet" href="../styles/navstyles.css">
     <script src="../scripts/scripts2.js"></script>
     
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -44,38 +45,56 @@
   </head>
   <body>
   
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="../images/city_logo.png" alt="Museum of Imagination Logo" class="logo">
+   <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <div class="logo">
+     <a href="museum.html">
+      <img alt="Logo" src="../images/city_logo.png"/>
+     </a>
+    </div>
+    <ul>
+     <!-- Navigation links -->
+    
+     <li class="dropdown">
+      <a class="dropbtn" href="javascript:void(0)">
+       Exhibits
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../html/museum.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/exhibition.html">Browse</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="../html/tickets.html">Tickets <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/support.html">Support</a>
-          </li>
-        </ul>
+      <div class="dropdown-content">
+       <a href="../html/museum.html#Exhibit-A">
+        Floating Cities
+       </a>
+       <a href="../html/museum.html#Exhibit-B">
+        Inverted Architecture
+       </a>
+       <a href="../html/museum.html#Exhibit-C">
+        City of Mirrors
+       </a>
       </div>
-    </nav>
+     </li>
+      <li>
+      <a href="../html/support.html">
+       Support
+      </a>
+     </li>
+     <li>
+      <a href="../html/exhibition.html">
+       Browse
+      </a>
+     </li>
+     <li>
+      <a class="cta-button" href="../html/tickets.html">
+       Tickets
+      </a>
+     </li>
+    </ul>
+   </nav>
   
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Get Your Tickets Now!</h1>
         <p class="lead">Join us to explore the future of cityscapes at the Museum of Imagination.</p>
-        <a href="#" class="btn btn-primary btn-lg" role="button">Buy Tickets</a>
+        <a href="../html/cart.html" class="btn btn-primary btn-lg" role="button">Buy Tickets</a>
       </div>
     </div>
   
@@ -90,7 +109,7 @@
               <div class="card-body">
                 <h5 class="card-title">Standard Ticket</h5>
                 <p class="card-text">Experience the museum with our standard admission ticket.</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
+                <a href="../html/cart.html" class="btn btn-primary">Purchase</a>
               </div>
             </div>
           </div>
@@ -101,7 +120,7 @@
               <div class="card-body">
                 <h5 class="card-title">Deluxe Ticket</h5>
                 <p class="card-text">Experience more museum exhibits with our Deluxe ticket.</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
+                <a href="../html/cart.html" class="btn btn-primary">Purchase</a>
               </div>
             </div>
           </div>
@@ -112,7 +131,7 @@
               <div class="card-body">
                 <h5 class="card-title">All Access Ticket</h5>
                 <p class="card-text">Experience all our museum has to offer with our all access ticket.</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
+                <a href="../html/cart.html" class="btn btn-primary">Purchase</a>
               </div>
             </div>
           </div>

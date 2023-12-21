@@ -42,32 +42,7 @@ header a:hover {
   font-weight: bolder;
   color: #000000; }
 
-/* --- NAV  TAB ----*/
-#nav-menu-btn {
-  background-color: #0541a2;
-  display: block;
-  width: 20px;
-  height: 2px;
-  position: absolute;
-  top: 3rem; }
 
-#nav-menu-btn::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #0c40d9;
-  position: relative;
-  top: -0.5rem; }
-
-#nav-menu-btn::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 2px;
-  background-color: #f2f4f7;
-  position: relative;
-  top: 0.4rem; }
 
 /******   SUPPORT WEBPAGE SECTION  *******/
 .dark {

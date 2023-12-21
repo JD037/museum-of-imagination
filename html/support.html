@@ -12,6 +12,7 @@
     
     <!-- CSS Styling & scripts -->
     <link rel="stylesheet" href="../styles/support.css">
+    <link rel="stylesheet" href="../styles/navstyles.css">
     <script src="../scripts/support.js"></script>
   
 </head>
@@ -20,34 +21,49 @@
     <div class="container-fluid p-0">
         <!-- Header Section -->
         <header class="supportSection container-fluid p-4">
-            <!-- Navigation -->
-            <nav class="navSupport navbar navbar-expand-lg navbar-light">
-                <div class="d-flex flex-sm-row flex-column align-items-center">
-                  <a class="nav-link" href="../html/museum.html">
-                    <img src="../images/city_logo.png" alt="MUSEUM_LOGO" class="logo mb-3" />
-                  </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navSupport navbar-nav ml-auto">
-                        <li class="navItemSupport nav-item">
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../html/exhibition.html">Search</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../html/tickets.html">Tickets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../html/support.html">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <div class="logo">
+     <a href="museum.html">
+      <img alt="Logo" src="../images/city_logo.png"/>
+     </a>
+    </div>
+    <ul>
+     <!-- Navigation links -->
+    
+     <li class="dropdown">
+      <a class="dropbtn" href="javascript:void(0)">
+       Exhibits
+      </a>
+      <div class="dropdown-content">
+       <a href="../html/museum.html#Exhibit-A">
+        Floating Cities
+       </a>
+       <a href="../html/museum.html#Exhibit-B">
+        Inverted Architecture
+       </a>
+       <a href="../html/museum.html#Exhibit-C">
+        City of Mirrors
+       </a>
+      </div>
+     </li>
+      <li>
+      <a href="../html/support.html">
+       Support
+      </a>
+     </li>
+     <li>
+      <a href="../html/exhibition.html">
+       Browse
+      </a>
+     </li>
+     <li>
+      <a class="cta-button" href="../html/tickets.html">
+       Tickets
+      </a>
+     </li>
+    </ul>
+   </nav>
             <!-- Hero Section -->
             <section class="container-fluid justify-content-center pt-5">
                 <div class="row justify-content-center text-center text-light m-5">

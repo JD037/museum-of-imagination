@@ -1,0 +1,161 @@
+/* cart.css */
+
+body {
+    background-color: #f8f8f8; /* Assuming a light grey background */
+    padding-top: 20%;  
+  }
+  
+  
+  /* Main container styling */
+  main.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Card styling for cart items and summary */
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+    border: none; /* Assuming a borderless card design */
+  }
+  
+  .card-header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text for the header */
+    font-size: 1.25rem;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between; /* Aligns the ticket name and price */
+    padding: .75rem 1.25rem; /* Top and bottom padding with more left-right padding */
+    border-bottom: 1px solid #e9ecef; /* A light border for each list item */
+  }
+  
+  /* The last item shouldn't have a border */
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Summary card styles */
+  .card-body .card-title {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: #28a745; /* Assuming a green color for checkout button */
+    border-color: #28a745;
+  }
+  
+  /* Add additional styles as needed */
+    /************  FOOTER SECTION ****************/
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #10182F;
+    border-radius: 6px;
+    padding: 2px;
+    height: 300px;
+  }
+  
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 20px;
+  }
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+    text-align: justify;
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-size: 14px;
+  }
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    color: #afb6c7;
+  }
+  .footer-col .icons i:hover  {
+    color: #fff;
+  }
+  
+  /* Responsive styles for smaller screens (max-width: 760px) */
+    
+  @media screen and (max-width: 995px) {
+    .footer {
+        height: auto; /* Adjust the height for smaller screens */
+    }
+  
+    .footer .footer-row {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 10px;
+    }
+  
+    .footer-row .footer-col {
+        flex: 1 1 100%;
+    }
+  
+    .footer-col .icons {
+        margin-top: 15px;
+    }
+  }  

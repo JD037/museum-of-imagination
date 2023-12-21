@@ -42,13 +42,6 @@ header a:hover {
   height: 100px;
 }
 
-/* Change the background color of the navbar to black */
-.navbar {
-  background-color: black;
-  /* You can also specify the text color if needed */
-  color: rgb(0, 0, 0); /* White text on a black background */
-}
-
 /* Optional: You can add additional styles to the navbar-brand if needed */
 .navbar-brand {
   display: flex;
